@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400..900;1,6..12,400..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "faded-gray": "#afafaf", "primary-fixed-dim": "#6be026", "surface": "#fbf9f8", "on-primary-fixed": "#082100", "primary": "#2b6c00", "night-ink": "#000437", "surface-container-lowest": "#ffffff", "surface-container-highest": "#e4e2e2", "error": "#ba1a1a", "inverse-primary": "#6be026", "surface-container-high": "#eae8e7", "storybook-green": "#d7ffb8", "primary-container": "#58cc02", "secondary-fixed": "#c8e6ff", "secondary-container": "#2fb8ff", "pencil-gray": "#777777", "on-tertiary-fixed": "#0b2000", "on-secondary-fixed-variant": "#004c6e", "error-container": "#ffdad6", "surface-container": "#efeded", "inverse-surface": "#303030", "secondary-fixed-dim": "#88ceff", "tertiary-container": "#80c54c", "on-primary-fixed-variant": "#1f5100", "on-error": "#ffffff", "primary-fixed": "#87fe45", "tertiary-fixed-dim": "#93d95d", "on-secondary-fixed": "#001e2e", "surface-tint": "#2b6c00", "inverse-on-surface": "#f2f0f0", "on-tertiary-fixed-variant": "#265100", "on-tertiary": "#ffffff", "outline-variant": "becbb1", "on-surface-variant": "#3f4a36", "surface-bright": "#fbf9f8", "surface-variant": "#e4e2e2", "on-secondary": "#ffffff", "on-error-container": "#93000a", "on-primary-container": "#1e5000", "on-secondary-container": "#004666", "on-surface": "#1b1c1c", "tertiary": "#346b00", "surface-container-low": "#f5f3f3", "surface-dim": "#dbd9d9", "outline": "#6f7b64", "tertiary-fixed": "#aef676", "secondary": "#006590", "on-primary": "#ffffff", "background": "#fbf9f8", "paper-white": "#ffffff", "on-tertiary-container": "#254f00", "on-background": "#1b1c1c" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-md": "1rem", "margin": "1rem", "space-xl": "2.5rem", "gutter-tablet": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "margin-tablet": "2rem", "margin-desktop": "3rem" }, fontFamily: { "label-sm": ["Nunito Sans"], "headline-sm": ["Nunito Sans"], "body-md": ["Nunito Sans"], "body-sm": ["Nunito Sans"], "label-md": ["Nunito Sans"], "display-lg-mobile": ["Nunito Sans"], "display-lg": ["Nunito Sans"], "headline-md": ["Nunito Sans"], "headline-lg": ["Nunito Sans"], "body-lg": ["Nunito Sans"], "title-md": ["Nunito Sans"], "label-lg": ["Nunito Sans"] }, fontSize: { "label-sm": ["11px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "700" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "700" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "500" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "500" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.04em", fontWeight: "700" }], "display-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "800" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "800" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "700" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "800" }], "body-lg": ["18px", { lineHeight: "26px", fontWeight: "600" }], "title-md": ["18px", { lineHeight: "24px", fontWeight: "700" }], "label-lg": ["15px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "800" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-paper-white/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-paper-white text-[22px]">qr_code_2</span></div><div class="flex flex-col"><span class="font-label-lg text-label-lg uppercase tracking-tight text-primary-container leading-none">TÌM ĐỒ THẤT LẠC</span><span class="font-label-sm text-label-sm text-pencil-gray leading-none mt-0.5">Tra Cứu</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Search & Filter Action Header -->
+<div class="px-margin pt-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-pencil-gray text-[22px]">search</span>
+<input class="w-full bg-paper-white text-on-surface font-body-md text-body-md pl-10 pr-4 py-2.5 rounded-xl shadow-sm focus:outline-none transition-all placeholder:text-pencil-gray" id="search-input" placeholder="Tìm theo tên đồ, mô tả…" type="text"/>
+</div>
+<!-- Filter Button triggering Sheet -->
+<button aria-label="Mở bộ lọc" class="h-11 w-11 flex items-center justify-center rounded-xl bg-paper-white text-pencil-gray active:scale-95 transition-transform shadow-sm" id="open-filter-btn">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</button>
+</div>
+<!-- Horizontal Category Filter Chips -->
+<div class="flex gap-space-xs overflow-x-auto py-1 no-scrollbar items-center -mx-margin px-margin">
+<button class="filter-chip active flex-shrink-0 px-4 py-1.5 rounded-xl font-label-md text-label-md bg-primary-container text-paper-white shadow-sm transition-all" data-category="all">
+        Tất cả
+      </button>
+<button class="filter-chip flex-shrink-0 px-4 py-1.5 rounded-xl font-label-md text-label-md bg-paper-white text-on-surface-variant shadow-sm transition-all" data-category="the-sv">
+        Thẻ SV
+      </button>
+<button class="filter-chip flex-shrink-0 px-4 py-1.5 rounded-xl font-label-md text-label-md bg-paper-white text-on-surface-variant shadow-sm transition-all" data-category="vi">
+        Ví
+      </button>
+<button class="filter-chip flex-shrink-0 px-4 py-1.5 rounded-xl font-label-md text-label-md bg-paper-white text-on-surface-variant shadow-sm transition-all" data-category="chia-khoa">
+        Chìa khoá
+      </button>
+<button class="filter-chip flex-shrink-0 px-4 py-1.5 rounded-xl font-label-md text-label-md bg-paper-white text-on-surface-variant shadow-sm transition-all" data-category="tai-nghe">
+        Tai nghe
+      </button>
+<button class="filter-chip flex-shrink-0 px-4 py-1.5 rounded-xl font-label-md text-label-md bg-paper-white text-on-surface-variant shadow-sm transition-all" data-category="dien-thoai">
+        Điện thoại
+      </button>
+<button class="filter-chip flex-shrink-0 px-4 py-1.5 rounded-xl font-label-md text-label-md bg-paper-white text-on-surface-variant shadow-sm transition-all" data-category="khac">
+        Khác
+      </button>
+</div>
+</div>
+<!-- Smart Match Banner (Gamified / Delight prompt) -->
+<div class="px-margin mt-space-md">
+<div class="bg-storybook-green/60 p-space-sm rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-xl bg-primary-container flex items-center justify-center text-paper-white">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-primary-fixed leading-tight">Trợ lý Cú Tìm Kiếm</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Phát hiện 2 món khớp với bạn!</p>
+</div>
+</div>
+<span class="px-2.5 py-1 bg-primary-container text-paper-white font-label-sm text-label-sm rounded-full">Tự động</span>
+</div>
+</div>
+<!-- Section: Có thể khớp với tin của bạn -->
+<section class="mt-space-lg px-margin flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[22px]">auto_awesome</span>
+<h2 class="font-title-md text-title-md text-night-ink">Có thể khớp với tin của bạn</h2>
+</div>
+<span class="font-label-sm text-label-sm text-pencil-gray uppercase tracking-wider">Gợi ý AI</span>
+</div>
+<!-- Suggested Cards Grid -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Suggested 1: Ví gập nam màu đen (Privacy Blurred) -->
+<div class="item-card bg-paper-white rounded-xl p-space-sm shadow-sm flex gap-space-sm cursor-pointer transition-all active:scale-[0.99]" data-title="Ví gập nam màu đen">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover filter blur-[6px] scale-110" data-alt="A textured black leather male wallet lying on a bright cafeteria counter table, soft ambient daylight, photorealistic yet playfully composed in modern clean aesthetic with sharp angles and clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlo8fn0-XvyCSiSzJaG-zi6It7lSzDconmr9DwJVxwot_dFNVZQU-7lhpukP4lv6s2r1YTGyzxC7zpn2LWrR5_Zg9pqbQ67A-M316ukFOoriIq5TPtoHKZSqKB-gBlM-OmBnoS-DyED2SBHJkhAocdQsgLeKkdYkB86GUyY89rJCmDDHmpsXaiO0_w6u6p3pVkMTUkJgT3u3m9THIJ1-FPuX4kf78xWOGVv_z-QT4"/>
+<div class="absolute inset-0 bg-night-ink/30 backdrop-blur-xs flex flex-col items-center justify-center text-paper-white gap-0.5">
+<span class="material-symbols-outlined text-[24px]">lock</span>
+<span class="font-label-sm text-[10px] tracking-tight text-paper-white">Bảo mật</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-lg bg-storybook-green text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">star</span>
+                Độ khớp 85%
+              </span>
+<span class="font-body-sm text-[12px] text-pencil-gray">11:30 hôm qua</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-night-ink truncate">Ví gập nam màu đen</h3>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="material-symbols-outlined text-[18px] text-pencil-gray">storefront</span>
+<span class="truncate">Căng tin Nhà B</span>
+</div>
+<div class="mt-1 flex items-center justify-end">
+<span class="font-label-sm text-label-sm text-secondary-container flex items-center gap-0.5">
+              Xác minh nhận đồ <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Suggested 2: Thẻ sinh viên K21 -->
+<div class="item-card bg-paper-white rounded-xl p-space-sm shadow-sm flex gap-space-sm cursor-pointer transition-all active:scale-[0.99]" data-title="Thẻ sinh viên K21">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover filter blur-[6px] scale-110" data-alt="A university plastic student ID card lying flat on an academic library wooden study desk with books in soft focus, bright sunlight through campus windows, privacy focused blurred details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV39e9La_B2j_4kgssN1B8wkb73CO0NPp6z_85EbX4K64yXFtlyUgSPa8Y_UcWDcQoTxbzrKYmHikllYmssiSuUq_kX2nDpjFR8qNDLuOsvVxlSX6czj5ugKhnB51bP17auhJyW5yGk2D-JWSzLNozW1KvRS1SkS8pbTSJYK-x0yzmE284Wm4OkfYRZMqdUvW26S8I8YTvfci17OCImFzgSoD2sHMtf-xXys6SMmI"/>
+<div class="absolute inset-0 bg-night-ink/30 flex flex-col items-center justify-center text-paper-white gap-0.5">
+<span class="material-symbols-outlined text-[24px]">lock</span>
+<span class="font-label-sm text-[10px] tracking-tight text-paper-white">Bảo mật</span>
+</div>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-lg bg-storybook-green text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">star</span>
+                Độ khớp 92%
+              </span>
+<span class="font-body-sm text-[12px] text-pencil-gray">08:20 sáng nay</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-night-ink truncate">Thẻ sinh viên K21</h3>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="material-symbols-outlined text-[18px] text-pencil-gray">local_library</span>
+<span class="truncate">Thư viện Tầng 2</span>
+</div>
+<div class="mt-1 flex items-center justify-end">
+<span class="font-label-sm text-label-sm text-secondary-container flex items-center gap-0.5">
+              Xác minh nhận đồ <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Đồ mới nhặt được -->
+<section class="mt-space-lg px-margin flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">new_releases</span>
+<h2 class="font-title-md text-title-md text-night-ink">Đồ mới nhặt được</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container cursor-pointer font-bold">Xem tất cả (28)</span>
+</div>
+<!-- Items Feed -->
+<div class="flex flex-col gap-space-sm" id="items-list">
+<!-- Item 1: Ví cầm tay đen -->
+<div class="item-card bg-paper-white rounded-xl p-space-sm shadow-sm flex flex-col gap-space-xs cursor-pointer transition-all active:scale-[0.99]" data-title="Ví cầm tay đen">
+<div class="flex gap-space-sm">
+<div class="relative w-20 h-20 rounded-xl overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover filter blur-[5px] scale-110" data-alt="A clean leather zippered pocket wallet placed on a bright library desk, privacy blurred out for sensitive card protection, bright lighting with crisp contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9Xk4bzTPrlTCggWkkaB1Gfk1UYGxq6pK2nApiEHhvsmlFxwbKgX884NAHDL9hfVFv2yd-6_uOfhbPtieWzgdcRcZuetg4KzWAJaASPr86YkrTAwu3_Pp9Ny6pfW6fOvZhhj05yzZCZB2i6gJgO-aAKHny4Z6sBZSqpzFnagqHnfSLNluYE-Z49a54Tl3eTA5gEhsb_b6Oq11w2DK00apSVPxiIkLOmp_73ke6AE4"/>
+<div class="absolute inset-0 bg-night-ink/25 flex items-center justify-center text-paper-white">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-title-md text-title-md text-night-ink truncate">Ví cầm tay đen</h3>
+<span class="px-2 py-0.5 rounded-lg bg-storybook-green text-on-primary-fixed font-label-sm text-label-sm flex-shrink-0">
+                Đang giữ tại trạm
+              </span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[16px] text-pencil-gray flex-shrink-0">location_on</span>
+<span class="truncate">Thư viện Tầng 3 (Bàn số 14)</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-[12px] text-pencil-gray">
+<span>Hôm nay, 09:15</span>
+<button class="px-3 py-1 bg-primary-container text-paper-white font-label-sm text-label-sm rounded-lg active:scale-95 transition-transform">
+                Xem chi tiết
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2: Chùm chìa khoá gấu bông -->
+<div class="item-card bg-paper-white rounded-xl p-space-sm shadow-sm flex flex-col gap-space-xs cursor-pointer transition-all active:scale-[0.99]" data-title="Chùm chìa khoá gấu bông">
+<div class="flex gap-space-sm">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A set of house and locker keys with a cute plush brown teddy bear keychain resting on red outdoor sports stadium bleachers, clear bright sunny daylight shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjccOGq4t-_XMzO3srT7YZSrTWso-rlILQlWI7P9RtFlJm-fUq3KH_zfBp11TW25D8oP-QUNGVZOzrhXax43FNCHYqslyo7dKe6Xmp1J2Yc6g41gkQAg8eEP8Pkhe-i4qrFb-jDt6a-MbgiJo28U98EbUxeYcCHGKfonvws2Ly7WxhQrPrxMT9mQYSckq54EC-mRf5guTd799Uiwn5qUjOWblaG1xbdP1vLTtT2yw"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-title-md text-title-md text-night-ink truncate">Chùm chìa khoá gấu bông</h3>
+<span class="px-2 py-0.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm flex-shrink-0">
+                Có người nhận
+              </span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[16px] text-pencil-gray flex-shrink-0">sports_basketball</span>
+<span class="truncate">Sân bóng rổ (Ghế khán đài)</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-[12px] text-pencil-gray">
+<span>Hôm qua, 17:00</span>
+<button class="px-3 py-1 bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-lg active:scale-95 transition-transform">
+                Xem chi tiết
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3: Tai nghe AirPods Pro case vàng -->
+<div class="item-card bg-paper-white rounded-xl p-space-sm shadow-sm flex flex-col gap-space-xs cursor-pointer transition-all active:scale-[0.99]" data-title="Tai nghe AirPods Pro case vàng">
+<div class="flex gap-space-sm">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A vivid yellow silicone protective case for wireless earbuds resting on a university lecture hall table, bright clean modern composition, high vibrancy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKB1iAQNfw3MVc2h4HJaMUTaVn-gyaIpP5FXEh7udRl5USl1fM-2YgjSkijRQibdgpWLuhnFW14jwHgWOXpmU766GUqxmivQ2JdYIVWbSxtxh5w1MlaSW5YYeSfE0lUZhzCi3s_j5m5XguPbN0gBy9LU8ZlhkVe_BeBqT2D5lDeolT0vBa1Xe3AL_pz0T-rLfZCMZfjcilrrAfzB6qS6mS9Qg11l1qozaiRUirPy8"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-title-md text-title-md text-night-ink truncate">Tai nghe AirPods Pro case vàng</h3>
+<span class="px-2 py-0.5 rounded-lg bg-storybook-green text-on-primary-fixed font-label-sm text-label-sm flex-shrink-0">
+                Đang giữ tại trạm
+              </span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[16px] text-pencil-gray flex-shrink-0">meeting_room</span>
+<span class="truncate">Phòng 402 Nhà A</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-[12px] text-pencil-gray">
+<span>Hôm qua, 14:10</span>
+<button class="px-3 py-1 bg-primary-container text-paper-white font-label-sm text-label-sm rounded-lg active:scale-95 transition-transform">
+                Xem chi tiết
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 4: Bình giữ nhiệt Lock&Lock -->
+<div class="item-card bg-paper-white rounded-xl p-space-sm shadow-sm flex flex-col gap-space-xs cursor-pointer transition-all active:scale-[0.99]" data-title="Bình giữ nhiệt Lock&amp;Lock">
+<div class="flex gap-space-sm">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A pastel mint-green insulated stainless steel water tumbler bottle placed on a campus cafeteria hallway ledge, natural bright daytime lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8PEiJKKgW3bRUKvasBZoDJBT1v84EC9M_i3D4RLVQap_8inPK2xfq6zsvmGCebm8_H5PQjY9F8VuHThJBbqbEawcYCbU7k2eWm5kArUPlGQjzoRA5pnhb7fB4iZXAsK9w0DqvVFrXeLOGZyjhLXv5wTisJ1u7luYK-kwb722rQerETA1rJiB_uXt6poQeviekQ3gHrFUPv_itfJbstbzIjslGjCEoxKoF0Eo4akM"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-title-md text-title-md text-night-ink truncate">Bình giữ nhiệt Lock&amp;Lock</h3>
+<span class="px-2 py-0.5 rounded-lg bg-surface-container-high text-pencil-gray font-label-sm text-label-sm flex-shrink-0">
+                Đã trả
+              </span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[16px] text-pencil-gray flex-shrink-0">fastfood</span>
+<span class="truncate">Hành lang Căng tin</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-[12px] text-pencil-gray">
+<span>2 ngày trước</span>
+<button class="px-3 py-1 bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-lg active:scale-95 transition-transform">
+                Xem chi tiết
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Filter Modal / Bottom Sheet -->
+<div class="fixed inset-0 z-50 bg-night-ink/40 backdrop-blur-xs flex flex-col justify-end hidden transition-opacity duration-200" id="filter-sheet">
+<div class="bg-paper-white rounded-t-3xl p-margin flex flex-col gap-space-md max-h-[751px] overflow-y-auto shadow-2xl">
+<!-- Handle bar & Header -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-1.5 rounded-full bg-surface-container-highest"></div>
+<div class="w-full flex items-center justify-between mt-1">
+<h3 class="font-headline-sm text-headline-sm text-night-ink">Bộ lọc tìm kiếm</h3>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-pencil-gray" id="close-filter-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Filter Section: Khu vực -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-night-ink">Khu vực nhặt được</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="loc-opt px-3 py-2 rounded-xl text-left font-body-sm text-body-sm bg-storybook-green text-on-primary-fixed flex items-center justify-between" data-loc="Thư viện">
+<span>Thư viện</span>
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+</button>
+<button class="loc-opt px-3 py-2 rounded-xl text-left font-body-sm text-body-sm bg-surface-container text-on-surface flex items-center justify-between" data-loc="Nhà A">
+<span>Nhà A</span>
+<span class="material-symbols-outlined text-[16px] text-pencil-gray hidden">check_circle</span>
+</button>
+<button class="loc-opt px-3 py-2 rounded-xl text-left font-body-sm text-body-sm bg-surface-container text-on-surface flex items-center justify-between" data-loc="Nhà B">
+<span>Nhà B</span>
+<span class="material-symbols-outlined text-[16px] text-pencil-gray hidden">check_circle</span>
+</button>
+<button class="loc-opt px-3 py-2 rounded-xl text-left font-body-sm text-body-sm bg-surface-container text-on-surface flex items-center justify-between" data-loc="Căng tin">
+<span>Căng tin</span>
+<span class="material-symbols-outlined text-[16px] text-pencil-gray hidden">check_circle</span>
+</button>
+<button class="loc-opt px-3 py-2 rounded-xl text-left font-body-sm text-body-sm bg-surface-container text-on-surface flex items-center justify-between col-span-2" data-loc="Sân thể thao">
+<span>Sân thể thao / Nhà đa năng</span>
+<span class="material-symbols-outlined text-[16px] text-pencil-gray hidden">check_circle</span>
+</button>
+</div>
+</div>
+<!-- Filter Section: Khoảng thời gian -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-night-ink">Khoảng thời gian</label>
+<div class="flex gap-space-xs flex-wrap">
+<button class="time-opt px-3 py-1.5 rounded-xl font-body-sm text-body-sm bg-storybook-green text-on-primary-fixed">Hôm nay</button>
+<button class="time-opt px-3 py-1.5 rounded-xl font-body-sm text-body-sm bg-surface-container text-on-surface">3 ngày qua</button>
+<button class="time-opt px-3 py-1.5 rounded-xl font-body-sm text-body-sm bg-surface-container text-on-surface">Tuần này</button>
+<button class="time-opt px-3 py-1.5 rounded-xl font-body-sm text-body-sm bg-surface-container text-on-surface">Tháng này</button>
+</div>
+</div>
+<!-- Filter Section: Trạng thái -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-night-ink">Trạng thái đồ vật</label>
+<div class="flex flex-col gap-space-xs">
+<label class="flex items-center justify-between p-2 rounded-xl bg-surface-container cursor-pointer">
+<span class="font-body-sm text-body-sm text-on-surface">Đang giữ tại trạm Tiếp nhận</span>
+<input checked="" class="w-5 h-5 accent-[#58cc02]" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-2 rounded-xl bg-surface-container cursor-pointer">
+<span class="font-body-sm text-body-sm text-on-surface">Có người nhận (đang chờ duyệt)</span>
+<input class="w-5 h-5 accent-[#58cc02]" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-2 rounded-xl bg-surface-container cursor-pointer">
+<span class="font-body-sm text-body-sm text-on-surface">Đã trả về chủ nhân</span>
+<input class="w-5 h-5 accent-[#58cc02]" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Sheet CTA Action Buttons -->
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 py-3 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg active:scale-95 transition-transform" id="reset-filter-btn">
+          Đặt lại
+        </button>
+<button class="flex-1 py-3 rounded-xl bg-primary-container text-paper-white font-label-lg text-label-lg active:scale-95 transition-transform shadow-md" id="apply-filter-btn">
+          Áp dụng
+        </button>
+</div>
+</div>
+</div>
+<!-- Detail Dialog / Preview Toast -->
+<div class="fixed inset-0 z-50 bg-night-ink/40 backdrop-blur-xs flex items-center justify-center p-margin hidden" id="detail-modal">
+<div class="bg-paper-white rounded-2xl p-space-md w-full max-w-sm flex flex-col gap-space-sm shadow-2xl relative">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-xl bg-storybook-green flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<button class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-pencil-gray" id="close-modal-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-night-ink" id="modal-item-title">Chi tiết đồ vật</h4>
+<p class="font-body-sm text-body-sm text-pencil-gray mt-0.5">Thông tin lưu trữ tại Trạm Tiếp Nhận Thất Lạc trường.</p>
+</div>
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-1 text-on-surface font-body-sm text-body-sm">
+<div class="flex justify-between">
+<span class="text-pencil-gray">Mã vật phẩm:</span>
+<span class="font-bold">#VN-88291</span>
+</div>
+<div class="flex justify-between">
+<span class="text-pencil-gray">Điểm nhận đồ:</span>
+<span class="font-bold">Bàn 01 - Trực Đoàn Trường</span>
+</div>
+<div class="flex justify-between">
+<span class="text-pencil-gray">Người bảo quản:</span>
+<span>Thầy Tuấn (P.CTSV)</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full py-2.5 rounded-xl bg-primary-container text-paper-white font-label-lg text-label-lg active:scale-95 transition-transform shadow-md" id="claim-btn">
+          Gửi yêu cầu nhận đồ
+        </button>
+<button class="w-full py-2 rounded-xl bg-transparent text-pencil-gray font-label-md text-label-md" id="cancel-claim-btn">
+          Đóng lại
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter Sheet Toggle
+  const openFilterBtn = document.getElementById('open-filter-btn');
+  const closeFilterBtn = document.getElementById('close-filter-btn');
+  const applyFilterBtn = document.getElementById('apply-filter-btn');
+  const resetFilterBtn = document.getElementById('reset-filter-btn');
+  const filterSheet = document.getElementById('filter-sheet');
+
+  function openFilters() {
+    filterSheet.classList.remove('hidden');
+  }
+  function closeFilters() {
+    filterSheet.classList.add('hidden');
+  }
+
+  if (openFilterBtn) openFilterBtn.addEventListener('click', openFilters);
+  if (closeFilterBtn) closeFilterBtn.addEventListener('click', closeFilters);
+  if (applyFilterBtn) applyFilterBtn.addEventListener('click', closeFilters);
+  if (resetFilterBtn) resetFilterBtn.addEventListener('click', closeFilters);
+
+  // Close sheet on backdrop click
+  if (filterSheet) {
+    filterSheet.addEventListener('click', (e) => {
+      if (e.target === filterSheet) closeFilters();
+    });
+  }
+
+  // Filter Chip selection logic
+  const chips = document.querySelectorAll('.filter-chip');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => {
+        c.classList.remove('bg-primary-container', 'text-paper-white');
+        c.classList.add('bg-paper-white', 'text-on-surface-variant');
+      });
+      chip.classList.remove('bg-paper-white', 'text-on-surface-variant');
+      chip.classList.add('bg-primary-container', 'text-paper-white');
+    });
+  });
+
+  // Modal Item Detail logic
+  const itemCards = document.querySelectorAll('.item-card');
+  const detailModal = document.getElementById('detail-modal');
+  const modalItemTitle = document.getElementById('modal-item-title');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+  const cancelClaimBtn = document.getElementById('cancel-claim-btn');
+  const claimBtn = document.getElementById('claim-btn');
+
+  itemCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const title = card.getAttribute('data-title') || 'Đồ vật thất lạc';
+      if (modalItemTitle) modalItemTitle.textContent = title;
+      if (detailModal) detailModal.classList.remove('hidden');
+    });
+  });
+
+  function closeDetailModal() {
+    if (detailModal) detailModal.classList.add('hidden');
+  }
+
+  if (closeModalBtn) closeModalBtn.addEventListener('click', closeDetailModal);
+  if (cancelClaimBtn) cancelClaimBtn.addEventListener('click', closeDetailModal);
+  if (claimBtn) {
+    claimBtn.addEventListener('click', () => {
+      claimBtn.textContent = 'Đã gửi yêu cầu thành công!';
+      claimBtn.classList.remove('bg-primary-container');
+      claimBtn.classList.add('bg-storybook-green', 'text-on-primary-fixed');
+      setTimeout(() => {
+        closeDetailModal();
+        claimBtn.textContent = 'Gửi yêu cầu nhận đồ';
+        claimBtn.classList.add('bg-primary-container');
+        claimBtn.classList.remove('bg-storybook-green', 'text-on-primary-fixed');
+      }, 1000);
+    });
+  }
+
+  if (detailModal) {
+    detailModal.addEventListener('click', (e) => {
+      if (e.target === detailModal) closeDetailModal();
+    });
+  }
+
+  // Location filter buttons toggle
+  const locOptions = document.querySelectorAll('.loc-opt');
+  locOptions.forEach(opt => {
+    opt.addEventListener('click', () => {
+      const isSelected = opt.classList.contains('bg-storybook-green');
+      const icon = opt.querySelector('.material-symbols-outlined');
+      if (isSelected) {
+        opt.classList.remove('bg-storybook-green', 'text-on-primary-fixed');
+        opt.classList.add('bg-surface-container', 'text-on-surface');
+        if (icon) icon.classList.add('hidden');
+      } else {
+        opt.classList.add('bg-storybook-green', 'text-on-primary-fixed');
+        opt.classList.remove('bg-surface-container', 'text-on-surface');
+        if (icon) icon.classList.remove('hidden');
+      }
+    });
+  });
+
+  // Time filter buttons toggle
+  const timeOptions = document.querySelectorAll('.time-opt');
+  timeOptions.forEach(opt => {
+    opt.addEventListener('click', () => {
+      timeOptions.forEach(t => {
+        t.classList.remove('bg-storybook-green', 'text-on-primary-fixed');
+        t.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      opt.classList.remove('bg-surface-container', 'text-on-surface');
+      opt.classList.add('bg-storybook-green', 'text-on-primary-fixed');
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-paper-white/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary-container scale-105"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-faded-gray transition-all" data-path="tra-cuu" href="#"><span class="material-symbols-outlined text-[24px]">search</span><span class="font-label-sm text-label-sm mt-0.5">Tra cứu</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-faded-gray transition-all" data-path="dang-tin" href="#"><span class="material-symbols-outlined text-[24px]">add_circle</span><span class="font-label-sm text-label-sm mt-0.5">Đăng tin</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-faded-gray transition-all" data-path="yeu-cau" href="#"><span class="material-symbols-outlined text-[24px]">assignment</span><span class="font-label-sm text-label-sm mt-0.5">Yêu cầu</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-faded-gray transition-all" data-path="tai-khoan" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm mt-0.5">Tài khoản</span></a></div></nav></body></html>
