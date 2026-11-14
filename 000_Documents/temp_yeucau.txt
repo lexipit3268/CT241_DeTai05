@@ -1,0 +1,1525 @@
+Yêu cầu đồ án môn học CT241 — Phân tích yêu cầu phần mềm
+1. Thông tin chung
+Mỗi nhóm 2–3 sinh viên phân tích yêu cầu cho một hệ thống phần mềm có người dùng thật. Sản phẩm
+là bộ tài liệu yêu cầu hoàn chỉnh. Đồ án không yêu cầu lập trình.
+Mục
+
+Nội dung
+
+Học phần
+
+CT241 — Phân tích yêu cầu phần mềm
+
+Hình thức
+
+Đồ án nhóm, 2–3 sinh viên
+
+Thời gian
+
+Nộp vào cuối tuần 15
+
+Sản phẩm
+
+Tài liệu tầm nhìn – phạm vi, hồ sơ thu thập, mô hình UML, SRS, ma trận truy
+vết, hồ sơ thay đổi
+
+Sau đồ án, sinh viên phải làm được:
+1. Xác định tầm nhìn, phạm vi, bên liên quan và lớp người dùng của một hệ thống (Chương 1, 2).
+2. Lập kế hoạch và thực hiện khai thác yêu cầu với người dùng thật bằng ít nhất 2 kỹ thuật
+(Chương 2).
+3. Phân loại, ưu tiên yêu cầu và giải quyết xung đột giữa các bên (Chương 1, 3).
+4. Mô hình hoá yêu cầu bằng 5 loại biểu đồ UML nhất quán với nhau (Chương 3).
+5. Viết SRS theo chuẩn IEEE, rà soát, truy vết và xử lý yêu cầu thay đổi (Chương 4).
+
+2. Đề tài và đăng ký
+Mỗi nhóm chọn một trong 14 đề tài dưới đây. Các đề tài ngang nhau về yêu cầu (Mục 3) và cách đánh
+giá (Mục 5). Mô tả của mỗi đề tài chỉ là điểm xuất phát (gợi ý); nhóm phải tự khai thác từ người dùng để
+làm rõ và bổ sung.
+Cột Tiếp cận cho biết mức dễ khi thu thập yêu cầu. Dễ: người dùng chính là sinh viên. Trung bình: có bên
+liên quan là cán bộ hoặc người ngoài trường; các vai này do nhóm khách hàng đóng (Mục 6), khuyến
+khích thu thập yêu cầu từ khách hàng thật nếu có thể.
+STT
+
+Đề tài
+
+Khách hàng thật để phỏng vấn
+
+Tiếp cận
+
+1
+
+Hệ thống đăng ký và quản lý sử dụng phòng
+máy của Khoa
+
+Sinh viên, giảng viên, cán bộ
+quản lý phòng máy
+
+Trung bình
+
+2
+
+Ứng dụng kết nối nhóm học và chia sẻ tài liệu
+cho sinh viên
+
+Sinh viên các khoá, sinh viên
+mentor, ban cán sự lớp
+
+Dễ
+
+3
+
+Chợ đồ cũ sinh viên
+
+Sinh viên mua và bán
+
+Dễ
+
+4
+
+Ghép chuyến đi chung xe về quê dịp lễ, Tết
+
+Sinh viên có xe, sinh viên cần đi
+
+Dễ
+
+STT
+
+Đề tài
+
+Khách hàng thật để phỏng vấn
+
+Tiếp cận
+
+nhờ
+5
+
+Tìm đồ thất lạc trong khuôn viên trường
+
+Sinh viên, bảo vệ các cổng
+
+Dễ
+
+6
+
+Đặt in, photocopy tài liệu trực tuyến, nhận tại
+tiệm quanh trường
+
+Sinh viên, chủ tiệm photo
+
+Dễ
+
+7
+
+Tìm bạn tập thể thao, văn nghệ và các sự kiện Sinh viên chơi thể thao, tham gia
+khác (chạy bộ, cầu lông, bóng đá…)
+văn nghệ, sự kiện
+
+Dễ
+
+8
+
+Tìm phòng trọ và bạn ở ghép quanh trường
+
+Sinh viên thuê trọ, chủ nhà trọ
+
+Trung bình
+
+9
+
+Việc làm bán thời gian cho sinh viên
+
+Sinh viên, chủ quán và cửa hàng
+quanh trường
+
+Trung bình
+
+10
+
+Quản lý câu lạc bộ và điểm rèn luyện
+
+Ban chủ nhiệm CLB, Đoàn – Hội,
+cố vấn học tập
+
+Trung bình
+
+11
+
+Đặt sân thể thao của trường
+
+Sinh viên, cán bộ quản lý sân
+
+Trung bình
+
+12
+
+Quản lý ký túc xá (đăng ký phòng, báo sửa
+chữa, điện nước)
+
+Sinh viên nội trú, cán bộ Ký túc
+xá
+
+Trung bình
+
+13
+
+Đặt lịch khám tại Trạm y tế trường
+
+Sinh viên, nhân viên y tế
+
+Trung bình
+
+14
+
+Phản ánh sự cố phòng học, giảng đường
+(máy chiếu, máy lạnh, đèn, bàn ghế)
+
+Sinh viên, giảng viên, cán bộ
+Quản trị thiết bị
+
+Trung bình
+
+Quy định chung khi thu thập yêu cầu
+•
+•
+•
+•
+
+Khách hàng (người được thu thập yêu cầu) không phải thành viên nhóm, khuyến khích khách
+hàng thật.
+Kỹ thuật phỏng vấn phải đủ ít nhất 3 bước: lập kế hoạch, phỏng vấn, tổng hợp yêu cầu phỏng
+vấn được.
+Kỹ thuật khảo sát phải bao gồm: mẫu khảo sát, kết quả khảo sát và tổng hợp yêu cầu khảo sát
+được.
+Có ít nhất 1 bản prototype phác thảo (trên giấy hoặc bằng công cụ bất kỳ) đưa cho người dùng
+xem và ghi lại phản hồi.
+
+2.1. Đề tài 1 — Hệ thống đăng ký và quản lý sử dụng phòng máy của Khoa
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Giảng viên cần đăng ký phòng máy cho buổi học bù, thi thực hành, seminar.
+Sinh viên muốn mượn phòng trống để làm đồ án. Cán bộ quản lý phòng máy
+duyệt lịch, theo dõi thiết bị hỏng và báo cáo mức sử dụng cho Ban chủ nhiệm
+Khoa. Hiện việc đăng ký làm bằng giấy, email và nhóm chat.
+
+Lớp người dùng (gợi
+
+Sinh viên mượn phòng tự học, làm đồ án; giảng viên đăng ký học bù, thi thực
+
+Hạng mục
+
+Mô tả
+
+ý)
+
+hành, seminar; cán bộ quản lý phòng máy; trưởng bộ môn, Ban chủ nhiệm
+Khoa (xem báo cáo); Phòng Quản trị thiết bị.
+
+Phạm vi tối thiểu
+
+Đăng ký, sửa, huỷ lịch và xem lịch trống; duyệt và xử lý trùng lịch; báo hỏng
+thiết bị và theo dõi sửa chữa; thông báo khi lịch thay đổi; thống kê mức sử
+dụng.
+
+Ràng buộc đã biết
+
+Đăng nhập bằng tài khoản trường; dùng được trên điện thoại; không thay thế
+hệ thống xếp thời khoá biểu hiện có.
+
+Xung đột cần phân
+tích
+
+Lịch dạy của giảng viên được ưu tiên, còn sinh viên cần phòng trống ngoài
+giờ. Người đăng ký giữ phòng rồi không dùng. Cán bộ muốn duyệt từng yêu
+cầu, người dùng muốn được xác nhận ngay.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Phiếu đăng ký phòng: chờ duyệt → đã duyệt → đang sử dụng → hoàn tất; có
+nhánh bị từ chối, bị huỷ. Phiếu báo hỏng thiết bị.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Trung bình. Nên thu thập trực tiếp từ giảng viên và cán bộ
+Khoa (hẹn lịch sớm); khi đó không cần nhờ nhóm khách hàng. Nếu không tiếp
+cận được, nhờ nhóm khách hàng đóng vai các bên liên quan này (Mục 6).
+
+2.2. Đề tài 2 — Ứng dụng kết nối nhóm học và chia sẻ tài liệu cho sinh viên
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Sinh viên hiện tìm nhóm đồ án, xin tài liệu ôn thi và hỏi bài qua nhiều nhóm
+Zalo, Facebook rời rạc. Thông tin trôi nhanh, tài liệu không rõ nguồn, sinh
+viên năm nhất không biết hỏi ai. Khoa muốn có một ứng dụng giúp sinh viên
+tìm bạn học cùng môn, lập nhóm học, chia sẻ tài liệu và nhận hỗ trợ từ anh
+chị khoá trước.
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên năm 1–2; sinh viên năm 3–4; sinh viên hỗ trợ (mentor); ban cán sự
+lớp, Chi đoàn, Liên chi hội kiểm duyệt nội dung.
+
+Phạm vi tối thiểu
+
+Hồ sơ học tập (môn đang học, môn có thể hỗ trợ, lịch rảnh); tìm và ghép
+nhóm; lịch họp và nhắc lịch; chia sẻ, đánh giá, báo cáo tài liệu; hỏi đáp và đặt
+lịch gặp mentor; kiểm duyệt nội dung.
+
+Ràng buộc đã biết
+
+Đăng nhập bằng tài khoản trường; ưu tiên dùng trên điện thoại; không cho
+đăng giáo trình có bản quyền hoặc đề thi chưa công bố.
+
+Xung đột cần phân
+tích
+
+Chia sẻ tự do so với bản quyền tài liệu. Hỏi bài ẩn danh so với trách nhiệm nội
+dung. Mentor hỗ trợ miễn phí so với cần được ghi nhận.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Nhóm học: đang tuyển → đủ thành viên → đang hoạt động → giải tán. Tài
+liệu: chờ duyệt → công khai → bị báo cáo → bị gỡ.
+
+Hạng mục
+
+Mô tả
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Dễ. Áp dụng quy định chung khi thu thập (đề tài mức Dễ).
+Nhóm khách hàng đóng vai Khoa (bên đặt hàng) và ban kiểm duyệt nội dung.
+
+2.3. Đề tài 3 — Chợ đồ cũ sinh viên
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Cuối kỳ, khi tốt nghiệp hay chuyển trọ, sinh viên bán lại giáo trình, quạt, xe
+đạp, đồ dùng qua các nhóm Facebook. Tin trôi nhanh, khó tìm món cần, giá
+không rõ ràng và có rủi ro lừa đảo. Ứng dụng giúp mua bán, trao đổi trong
+cộng đồng sinh viên của trường.
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên bán; sinh viên mua; sinh viên sắp tốt nghiệp thanh lý nhiều món;
+sinh viên quản trị kiểm duyệt tin.
+
+Phạm vi tối thiểu
+
+Đăng tin kèm ảnh, giá, tình trạng; tìm kiếm và lọc theo danh mục, giá, khu
+vực; nhắn tin, trả giá; hẹn giao nhận; đánh dấu đã bán; đánh giá người mua,
+người bán; báo cáo tin vi phạm; lưu tin và nhận thông báo khi có món đang
+tìm.
+
+Ràng buộc đã biết
+
+Đăng nhập bằng tài khoản trường; giao dịch trực tiếp, không bắt buộc thanh
+toán trong ứng dụng; không cho đăng hàng cấm hoặc tài liệu vi phạm bản
+quyền.
+
+Xung đột cần phân
+tích
+
+Người bán muốn đăng nhanh, người mua cần thông tin đầy đủ. Kiểm duyệt
+trước khi đăng so với đăng ngay. Ẩn danh so với uy tín người bán.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Tin đăng: nháp → đang bán → đang giao dịch → đã bán; có nhánh bị ẩn, bị
+gỡ, hết hạn.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Dễ. Áp dụng quy định chung khi thu thập (đề tài mức Dễ). Yêu
+cầu người dùng thường mơ hồ, nên dùng prototype và bảng hỏi sớm. Nhóm
+khách hàng đóng vai bên đặt hàng và ban quản trị.
+
+2.4. Đề tài 4 — Ghép chuyến đi chung xe về quê dịp lễ, Tết
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Dịp lễ, Tết, vé xe khan hiếm và đắt. Sinh viên có xe muốn có người đi cùng để
+chia chi phí, sinh viên khác cần đi nhờ. Hiện việc ghép chuyến diễn ra qua
+nhóm đồng hương trên mạng xã hội, khó kiểm chứng người lạ.
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên có xe (người chở); sinh viên cần đi nhờ; ban liên lạc hội đồng
+hương; sinh viên quản trị xử lý báo cáo.
+
+Phạm vi tối thiểu
+
+Đăng chuyến (điểm đi, điểm đến, giờ, số chỗ, chi phí chia); tìm chuyến theo
+tuyến và ngày; đặt chỗ và xác nhận; nhắn tin; chia sẻ hành trình cho người
+
+Hạng mục
+
+Mô tả
+thân; đánh giá sau chuyến; báo cáo sự cố.
+
+Ràng buộc đã biết
+
+Đăng nhập bằng tài khoản trường và xác minh danh tính; chỉ chia chi phí,
+không phải dịch vụ vận tải kinh doanh; dùng trên điện thoại.
+
+Xung đột cần phân
+tích
+
+An toàn (xác minh, chia sẻ vị trí) so với riêng tư. Người chở muốn đủ khách,
+hành khách muốn huỷ linh hoạt. Cách chia chi phí công bằng.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Chuyến đi: đang nhận khách → đủ chỗ → đang đi → hoàn thành; có nhánh bị
+huỷ. Yêu cầu đặt chỗ: chờ → được nhận / bị từ chối.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Dễ. Áp dụng quy định chung khi thu thập (đề tài mức Dễ).
+Phỏng vấn cả người chở và người đi nhờ; tìm hiểu quy định pháp luật liên
+quan đến chở người. Nhóm khách hàng đóng vai bên đặt hàng.
+
+2.5. Đề tài 5 — Tìm đồ thất lạc trong khuôn viên trường
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Sinh viên mất thẻ, ví, chìa khoá, tai nghe thường đăng lên nhóm Facebook;
+người nhặt được gửi bảo vệ hoặc tự đăng bài. Rất khó khớp tin mất với tin
+nhặt được và khó xác minh đúng chủ.
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên mất đồ; sinh viên nhặt được; bảo vệ các cổng, nơi giữ đồ thất lạc;
+sinh viên quản trị.
+
+Phạm vi tối thiểu
+
+Đăng tin mất hoặc nhặt được (loại đồ, mô tả, nơi, thời gian, ảnh); gợi ý tin
+khớp nhau; câu hỏi xác minh chủ sở hữu; hẹn giao nhận tại điểm giữ đồ; cập
+nhật trạng thái; thống kê đồ chưa có người nhận.
+
+Ràng buộc đã biết
+
+Đăng nhập bằng tài khoản trường; đồ có giá trị chỉ hiện một phần thông tin
+để tránh nhận vơ; dùng trên điện thoại.
+
+Xung đột cần phân
+tích
+
+Công khai chi tiết để dễ tìm so với che chi tiết để xác minh. Bảo vệ cần thủ tục
+giao nhận chặt, sinh viên muốn nhận nhanh.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Đồ nhặt được: đang giữ → có người nhận → đang xác minh → đã trả; có
+nhánh quá hạn, chuyển nơi lưu giữ.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Dễ. Áp dụng quy định chung khi thu thập (đề tài mức Dễ).
+Nhóm khách hàng đóng vai bên đặt hàng và bộ phận bảo vệ, nơi giữ đồ;
+khuyến khích phỏng vấn thêm bảo vệ thật.
+
+2.6. Đề tài 6 — Đặt in, photocopy tài liệu trực tuyến, nhận tại tiệm quanh trường
+Hạng mục
+
+Mô tả
+
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Trước hạn nộp bài và mùa thi, sinh viên xếp hàng ở tiệm photo, gửi file qua
+Zalo hoặc email. Tiệm dễ in nhầm file hay sai tuỳ chọn, sinh viên không biết
+khi nào lấy được. Ứng dụng cho phép gửi file, chọn tuỳ chọn in, thanh toán và
+nhận tại tiệm đã chọn. Các tiệm quanh trường thường có sẵn bản gốc của
+một số giáo trình môn học của trường; sinh viên muốn photo giáo trình
+nhưng thường chỉ biết tên giáo trình và giảng viên giảng dạy, không có file.
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên đặt in lẻ; ban cán sự lớp, nhóm đặt in số lượng lớn tài liệu chung;
+chủ tiệm và nhân viên tiệm photo.
+
+Phạm vi tối thiểu
+
+Tải file và xem trước; chọn khổ giấy, màu, in 1 hay 2 mặt, số bản, đóng gáy và
+xem báo giá; chọn tiệm và giờ nhận; theo dõi trạng thái đơn và nhận thông
+báo; thanh toán; tiệm quản lý hàng đợi, bảng giá và tình trạng máy; đánh giá
+tiệm. Tra cứu giáo trình có sẵn tại các tiệm theo tên giáo trình, tên môn học
+hoặc tên giảng viên giảng dạy, kể cả khi chỉ nhớ một phần tên; đặt photo giáo
+trình không cần tải file; so sánh giá và thời gian nhận giữa các tiệm; tiệm cập
+nhật danh mục giáo trình đang có.
+
+Ràng buộc đã biết
+
+Hỗ trợ tối thiểu PDF, DOCX, PPTX; file tự xoá sau khi nhận hàng hoặc sau thời
+hạn quy định; dùng được trên điện thoại; không thay thế phần mềm điều
+khiển máy in của tiệm.
+
+Xung đột cần phân
+tích
+
+Sinh viên muốn lấy nhanh vào giờ cao điểm, còn tiệm bị giới hạn công suất.
+Sinh viên muốn giữ riêng tư file (bài làm, đề cương), còn tiệm cần mở file để
+kiểm tra. Huỷ đơn khi tiệm đã in thì ai chịu chi phí. Sinh viên muốn photo giáo
+trình nhanh và rẻ, nhưng cần làm rõ giáo trình nào được phép sao chụp và ai
+xác nhận (tác giả, giảng viên, nhà trường). Thông tin tên giáo trình, giảng viên
+do tiệm tự nhập dễ sai hoặc lỗi thời khi giảng viên đổi giáo trình.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Đơn in: chờ xác nhận → đang in → sẵn sàng nhận → đã nhận; có nhánh bị
+huỷ, quá hạn không nhận.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Dễ. Áp dụng quy định chung khi thu thập (đề tài mức Dễ).
+Nhóm khách hàng đóng vai chủ tiệm photo và các bên liên quan của tiệm;
+khuyến khích phỏng vấn và quan sát thêm tại tiệm thật vào giờ cao điểm.
+
+2.7. Đề tài 7 — Tìm bạn tập thể thao, văn nghệ và các sự kiện khác (chạy bộ, cầu lông, bóng
+đá…)
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Sinh viên muốn chơi cầu lông, chạy bộ, đá bóng, tập văn nghệ hoặc đi sự kiện
+nhưng thiếu người hoặc không quen ai cùng sở thích. Hiện việc rủ nhau diễn
+ra qua các nhóm Facebook, Zalo: tin trôi nhanh, hẹn rồi bỏ. Ứng dụng giúp
+đăng hoạt động, tìm người phù hợp và xác nhận tham gia.
+
+Hạng mục
+
+Mô tả
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên tạo hoạt động (người rủ); sinh viên tham gia; ban chủ nhiệm CLB
+thể thao, văn nghệ tổ chức hoạt động định kỳ; sinh viên quản trị xử lý báo
+cáo vi phạm.
+
+Phạm vi tối thiểu
+
+Hồ sơ sở thích, trình độ, giờ rảnh; tạo hoạt động (loại, thời gian, địa điểm, số
+người, trình độ, chi phí chia đều); tìm, lọc và gợi ý hoạt động phù hợp; đăng
+ký, danh sách chờ, huỷ tham gia; nhắc lịch; trao đổi trong hoạt động; đánh
+giá uy tín sau hoạt động; báo cáo vi phạm.
+
+Ràng buộc đã biết
+
+Đăng nhập bằng tài khoản trường (chỉ sinh viên trong trường); không công
+khai số điện thoại; ưu tiên dùng trên điện thoại.
+
+Xung đột cần phân
+tích
+
+Dễ tìm người so với an toàn và riêng tư khi gặp người lạ. Người tổ chức muốn
+chốt danh sách sớm, người tham gia muốn được huỷ linh hoạt. Có nên hạn
+chế người hay bỏ hẹn mà không làm người mới ngại tham gia.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Hoạt động: đang tuyển → đủ người → đang diễn ra → đã kết thúc; có nhánh
+bị huỷ. Lượt đăng ký: chờ → được nhận / trong danh sách chờ → đã tham gia
+/ vắng.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Dễ. Áp dụng quy định chung khi thu thập (đề tài mức Dễ).
+Phỏng vấn sinh viên thuộc ít nhất 2 nhóm sở thích khác nhau (ví dụ thể thao
+và văn nghệ). Nhóm khách hàng đóng vai bên đặt hàng và ban chủ nhiệm
+CLB.
+
+2.8. Đề tài 8 — Tìm phòng trọ và bạn ở ghép quanh trường
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Sinh viên năm nhất hoặc cần chuyển trọ tìm phòng qua nhóm mạng xã hội và
+người môi giới; giá điện nước, chi phí phát sinh không rõ; tìm bạn ở ghép hợp
+lối sinh hoạt rất khó.
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên tìm phòng; sinh viên tìm bạn ở ghép; chủ nhà trọ; sinh viên quản trị
+kiểm duyệt tin.
+
+Phạm vi tối thiểu
+
+Chủ trọ đăng phòng (giá, điện nước, diện tích, tiện ích, ảnh, khoảng cách tới
+trường); tìm, lọc, xem trên bản đồ; hồ sơ thói quen sinh hoạt và gợi ý bạn ở
+ghép; hẹn xem phòng; đánh giá phòng và chủ trọ; báo cáo tin sai.
+
+Ràng buộc đã biết
+
+Chủ trọ phải xác thực thông tin liên hệ; sinh viên đăng nhập bằng tài khoản
+trường; không xử lý hợp đồng thuê nhà.
+
+Xung đột cần phân
+tích
+
+Chủ trọ muốn tin hấp dẫn, sinh viên cần thông tin thật (giá điện, nước, phụ
+phí). Đánh giá công khai so với phản đối của chủ trọ. Hồ sơ ghép bạn cần đủ
+chi tiết nhưng phải giữ riêng tư.
+
+Hạng mục
+
+Mô tả
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Tin phòng: chờ duyệt → còn trống → đã có người thuê; có nhánh hết hạn, bị
+gỡ.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Trung bình. Nhóm khách hàng đóng vai chủ nhà trọ và bên đặt
+hàng; khuyến khích phỏng vấn thêm chủ trọ thật.
+
+2.9. Đề tài 9 — Việc làm bán thời gian cho sinh viên
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Sinh viên tìm việc làm thêm qua các nhóm mạng xã hội, gặp nhiều tin lừa đảo
+(đặt cọc, "việc nhẹ lương cao"), và khó tìm ca làm khớp lịch học.
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên tìm việc; chủ quán, cửa hàng tuyển dụng; sinh viên quản trị kiểm
+duyệt tin và xử lý báo cáo.
+
+Phạm vi tối thiểu
+
+Nhà tuyển dụng đăng tin (công việc, ca, mức lương, địa điểm); xác minh nhà
+tuyển dụng; hồ sơ sinh viên với lịch rảnh và kỹ năng; tìm việc khớp lịch học;
+ứng tuyển và theo dõi trạng thái; đánh giá nơi làm; báo cáo tin lừa đảo.
+
+Ràng buộc đã biết
+
+Không thu phí sinh viên; nhà tuyển dụng phải được xác minh trước khi đăng
+tin; sinh viên đăng nhập bằng tài khoản trường.
+
+Xung đột cần phân
+tích
+
+Nhà tuyển dụng muốn đăng nhanh, hệ thống cần kiểm duyệt chống lừa đảo.
+Sinh viên cần ca linh hoạt theo lịch học, nhà tuyển dụng cần ca cố định.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Đơn ứng tuyển: đã gửi → đã xem → hẹn phỏng vấn → được nhận / bị từ
+chối. Tin tuyển dụng: chờ duyệt → đang tuyển → đã đủ người.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Trung bình. Nhóm khách hàng đóng vai chủ quán, cửa hàng
+tuyển dụng và bên đặt hàng; khuyến khích phỏng vấn thêm chủ quán thật.
+
+2.10. Đề tài 10 — Quản lý câu lạc bộ và điểm rèn luyện
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Các CLB quản lý thành viên và hoạt động bằng Google Form, Excel. Minh
+chứng tham gia hoạt động để cộng điểm rèn luyện nộp bằng giấy, dễ thất lạc,
+duyệt chậm.
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên thành viên; ban chủ nhiệm CLB; Đoàn – Hội duyệt hoạt động; cố vấn
+học tập xác nhận điểm rèn luyện.
+
+Phạm vi tối thiểu
+
+Đăng ký thành viên CLB; tạo hoạt động và xin phép tổ chức; đăng ký tham gia,
+điểm danh; ghi nhận minh chứng; tổng hợp điểm rèn luyện theo học kỳ;
+duyệt nhiều cấp; báo cáo.
+
+Hạng mục
+
+Mô tả
+
+Ràng buộc đã biết
+
+Theo quy chế đánh giá điểm rèn luyện hiện hành; đăng nhập bằng tài khoản
+trường; không thay thế hệ thống điểm chính thức của trường.
+
+Xung đột cần phân
+tích
+
+CLB muốn cộng điểm rộng rãi, Đoàn – Hội cần kiểm soát. Sinh viên muốn nộp
+minh chứng đơn giản, hệ thống cần chống điểm danh hộ.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Hoạt động: đề xuất → được duyệt → đang diễn ra → đã kết thúc → đã xác
+nhận điểm. Minh chứng: đã nộp → được duyệt / bị từ chối.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Trung bình. Nhóm khách hàng đóng vai Đoàn – Hội, cố vấn học
+tập và ban chủ nhiệm CLB; đọc quy chế điểm rèn luyện như một nguồn tài
+liệu hiện có.
+
+2.11. Đề tài 11 — Đặt sân thể thao của trường
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Sinh viên đặt sân bóng đá, cầu lông, bóng chuyền của trường bằng cách gọi
+điện hoặc đến trực tiếp. Lịch hay bị trùng, có người giữ sân rồi không đến, và
+lịch học môn Giáo dục thể chất chiếm nhiều khung giờ.
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên đặt sân lẻ; đội, CLB đặt định kỳ; cán bộ quản lý sân; giảng viên Giáo
+dục thể chất (lịch học).
+
+Phạm vi tối thiểu
+
+Xem lịch trống; đặt và huỷ sân; thu phí; đặt định kỳ; check-in tại sân; quản lý
+lịch cố định của môn học; báo sân hư hỏng; thống kê mức sử dụng.
+
+Ràng buộc đã biết
+
+Lịch học Giáo dục thể chất luôn được ưu tiên; thu phí theo quy định của
+trường; đăng nhập bằng tài khoản trường.
+
+Xung đột cần phân
+tích
+
+Đặt định kỳ cho CLB so với cơ hội cho sinh viên đặt lẻ. Huỷ sát giờ có được
+hoàn phí không. Xử lý người đặt rồi không đến.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Lượt đặt sân: chờ thanh toán → đã xác nhận → đã check-in → hoàn tất; có
+nhánh bị huỷ, vắng mặt.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Trung bình. Nhóm khách hàng đóng vai cán bộ quản lý sân và
+giảng viên Giáo dục thể chất.
+
+2.12. Đề tài 12 — Quản lý ký túc xá (đăng ký phòng, báo sửa chữa, điện nước)
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Việc đăng ký ở, gia hạn, xét phòng theo diện ưu tiên, báo sửa chữa và đóng
+tiền điện nước tại ký túc xá chủ yếu làm bằng giấy và xếp hàng; sinh viên khó
+biết hồ sơ đang ở bước nào.
+
+Lớp người dùng (gợi
+
+Sinh viên đăng ký mới; sinh viên nội trú; trưởng phòng, ban tự quản; cán bộ
+
+Hạng mục
+
+Mô tả
+
+ý)
+
+Ký túc xá; kỹ thuật viên.
+
+Phạm vi tối thiểu
+
+Đăng ký, gia hạn và xét duyệt theo tiêu chí ưu tiên; xếp phòng, đổi phòng;
+báo sửa chữa và theo dõi xử lý; xem và thanh toán tiền điện nước; thông báo
+nội quy; đăng ký khách đến thăm.
+
+Ràng buộc đã biết
+
+Tiêu chí ưu tiên theo quy định của trường; đăng nhập bằng tài khoản trường;
+dùng được trên điện thoại.
+
+Xung đột cần phân
+tích
+
+Xét theo tiêu chí ưu tiên so với đăng ký trước được trước. Sinh viên muốn
+chọn bạn cùng phòng, ban quản lý muốn tự xếp. Cách chia tiền điện nước
+trong phòng.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Hồ sơ đăng ký ở: đã nộp → đang xét → được duyệt / danh sách chờ / bị từ
+chối → đang ở → đã trả phòng.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Trung bình. Nhóm khách hàng đóng vai Ban quản lý Ký túc xá
+và các bên liên quan; dùng quy định xét duyệt hiện hành làm tài liệu đầu vào.
+
+2.13. Đề tài 13 — Đặt lịch khám tại Trạm y tế trường
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Sinh viên đến Trạm y tế phải chờ lâu, không biết giờ làm việc của bác sĩ, thủ
+tục bảo hiểm y tế còn dùng giấy tờ.
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên đến khám; nhân viên tiếp nhận; bác sĩ, nhân viên y tế; cán bộ phụ
+trách bảo hiểm y tế sinh viên.
+
+Phạm vi tối thiểu
+
+Xem lịch làm việc; đặt lịch theo khung giờ; lấy số thứ tự và theo dõi lượt;
+nhắc lịch; xem lịch sử khám của bản thân; tra cứu thông tin bảo hiểm y tế;
+thông báo khám sức khoẻ đầu khoá, tiêm chủng.
+
+Ràng buộc đã biết
+
+Bảo mật dữ liệu sức khoẻ và dữ liệu cá nhân; tuân thủ quy định về hồ sơ y tế;
+không chẩn đoán trực tuyến.
+
+Xung đột cần phân
+tích
+
+Khám theo lịch hẹn so với ca cấp cứu và người đến trực tiếp. Sinh viên muốn
+xem hồ sơ của mình, nhân viên chỉ được xem phần phù hợp với vai trò.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Lịch hẹn khám: đã đặt → đã check-in → đang khám → hoàn tất; có nhánh bị
+huỷ, vắng mặt.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Trung bình. Nhóm khách hàng đóng vai nhân viên y tế và cán
+bộ phụ trách bảo hiểm y tế; tìm hiểu quy định về bảo vệ dữ liệu cá nhân và
+hồ sơ sức khoẻ.
+
+2.14. Đề tài 14 — Phản ánh sự cố phòng học, giảng đường (máy chiếu, máy lạnh, đèn, bàn
+ghế)
+Hạng mục
+
+Mô tả
+
+Bối cảnh
+
+Máy chiếu hỏng, máy lạnh không chạy, đèn tắt, bàn ghế gãy làm gián đoạn
+buổi học. Sinh viên báo lớp trưởng, lớp trưởng báo giảng viên hoặc gọi điện
+cho bộ phận quản trị. Nhiều lớp báo cùng một sự cố, không ai biết đã có
+người báo chưa và khi nào được sửa.
+
+Lớp người dùng (gợi
+ý)
+
+Sinh viên phản ánh; lớp trưởng, ban cán sự lớp; giảng viên đang dạy tại
+phòng; cán bộ Phòng Quản trị thiết bị tiếp nhận và phân công; kỹ thuật viên
+xử lý.
+
+Phạm vi tối thiểu
+
+Phản ánh kèm ảnh, chọn phòng (ví dụ quét mã QR dán tại phòng) và loại sự
+cố; phát hiện và gộp phản ánh trùng, cho phép xác nhận "tôi cũng gặp"; phân
+mức ưu tiên (ảnh hưởng buổi học đang diễn ra); phân công xử lý; cập nhật
+trạng thái và thông báo cho người phản ánh; thống kê sự cố theo phòng và
+loại thiết bị.
+
+Ràng buộc đã biết
+
+Đăng nhập bằng tài khoản trường; dùng được trên điện thoại; không thay thế
+hệ thống quản lý tài sản hiện có của trường.
+
+Xung đột cần phân
+tích
+
+Sinh viên muốn được xử lý ngay, còn bộ phận quản trị có ít nhân lực và phải
+ưu tiên. Cho phản ánh ẩn danh để khuyến khích báo, so với chống phản ánh
+sai hoặc spam. Ai được xác nhận sự cố đã được khắc phục: người phản ánh
+hay kỹ thuật viên.
+
+Đối tượng có nhiều
+trạng thái (gợi ý)
+
+Phiếu phản ánh: mới → đã tiếp nhận → đang xử lý → đã xử lý → đã xác nhận;
+có nhánh bị gộp, bị từ chối, mở lại.
+
+Lưu ý khi thu thập
+
+Mức tiếp cận: Trung bình. Nhóm khách hàng đóng vai cán bộ Phòng Quản trị
+thiết bị và kỹ thuật viên; khuyến khích quan sát, chụp ảnh tình trạng thực tế
+tại một số phòng học.
+
+3. Yêu cầu chi tiết
+Các con số dưới đây là mức tối thiểu; điểm dựa trên độ đúng, nhất quán và kiểm chứng được.
+
+3.1. Tầm nhìn và thu thập yêu cầu (Chương 1, 2)
+1. Tuyên bố tầm nhìn theo mẫu từ khoá (Dành cho – Người – Sản phẩm – Khác với…); phạm vi và
+hạn chế; giả định; lược đồ ngữ cảnh.
+2. Hồ sơ bên liên quan và tối thiểu 3 lớp người dùng, có xác định lớp ưu tiên và người tiên phong
+sản phẩm.
+3. Kế hoạch khai thác dùng tối thiểu 2 kỹ thuật, giải thích lý do chọn theo 6 tiêu chí ở mục 2.5 của
+giáo trình.
+
+4. Phỏng vấn người dùng thật: tối thiểu 3 người thuộc 2 lớp người dùng (đề tài mức Dễ: theo Quy
+định chung khi thu thập ở mục 2). Mỗi buổi có biên bản gồm thời gian, người tham gia, câu hỏi,
+câu trả lời, yêu cầu rút ra, và xác nhận của người được phỏng vấn (chữ ký, email hoặc tin nhắn).
+Các bên liên quan không phải sinh viên có thể do nhóm khách hàng đóng vai (Mục 6).
+5. Ma trận CRUDL để tìm yêu cầu còn thiếu.
+6. Danh sách yêu cầu đã phân loại theo sơ đồ Hình 1.3 (nghiệp vụ, người dùng, hệ thống, FR, NFR,
+ràng buộc), gắn mức MoSCoW, và mô tả ít nhất 1 xung đột yêu cầu giữa các bên cùng cách
+thương lượng.
+
+3.2. Phân tích và mô hình hoá (Chương 3)
+Biểu đồ
+
+Tối thiểu
+
+Điều kiện bắt buộc
+
+Use Case
+
+1 biểu đồ tổng
+quát, 12 use
+case
+
+Có đủ quan hệ include, extend, generalization; 5 use
+case quan trọng nhất có đặc tả đầy đủ (luồng chính,
+luồng thay thế, ngoại lệ)
+
+Activity
+
+3 biểu đồ
+
+Ít nhất 2 biểu đồ có swimlane; có decision/merge và
+fork/join
+
+Class (mức phân tích)
+
+8 lớp
+
+Có thuộc tính, bội số và ít nhất 4 loại quan hệ khác
+nhau
+
+State
+
+2 biểu đồ
+
+Cho đối tượng có vòng đời rõ (ví dụ đơn đăng ký, tin
+đăng, yêu cầu xử lý); có guard
+
+Sequence
+
+3 biểu đồ
+
+Mỗi biểu đồ ứng với 1 use case đã đặc tả; có alt
+hoặc opt
+
+Các biểu đồ phải nhất quán với nhau: đối tượng trong Sequence có trong Class, trạng thái trong State
+khớp với luồng trong Activity, mỗi use case truy được về yêu cầu. Công cụ tự chọn: StarUML, draw.io,
+PlantUML, Visual Paradigm, …
+
+3.3. Đặc tả và quản lý yêu cầu (Chương 4)
+1. SRS theo cấu trúc IEEE 29148:2018 (hoặc IEEE 830-1998), tối thiểu 25 FR và 10 NFR phủ ít nhất 5
+trong 8 thuộc tính chất lượng.
+2. Cách viết yêu cầu: mỗi yêu cầu có mã số; dùng đúng SHALL / SHOULD / MAY (Bảng 4.5); FR theo
+template Bảng 4.9; không dùng các từ trong Bảng 4.10; NFR phải đo được, ví dụ “tải trang kết
+quả tìm kiếm dưới 2 giây với 200 người dùng đồng thời”.
+3. Rà soát chéo: mỗi nhóm rà soát SRS của một nhóm khác bằng checklist Bảng 4.8 và nộp biên
+bản rà soát. Nhóm được rà soát phản hồi từng lỗi: đã sửa, hoặc không sửa kèm lý do.
+4. Ma trận truy vết (RTM) hai chiều: yêu cầu nghiệp vụ → FR/NFR → use case → biểu đồ liên quan
+→ ca kiểm thử chấp nhận (chỉ cần tên ca và tiêu chí đạt).
+5. Quản lý thay đổi: đóng baseline SRS v1.0 khi hoàn thành bản đặc tả đầu tiên. Sau đó, nhóm
+khách hàng (Mục 6) đưa ra ít nhất 1 Change Request (CR) có thay đổi thực chất (ví dụ thêm hoặc
+sửa chức năng, thêm lớp người dùng, thay đổi ràng buộc), ảnh hưởng tối thiểu 2 FR và 1 use
+
+case. Nhóm lập phiếu theo Bảng 4.16, phân tích tác động bằng RTM, đóng vai CCB để ra quyết
+định, rồi phát hành SRS v1.1 có bảng lịch sử thay đổi. Không sửa thẳng SRS khi chưa qua CR.
+6. Chỉ số yêu cầu: báo cáo tối thiểu 5 chỉ số từ Bảng 4.20, ví dụ tỷ lệ yêu cầu đã truy vết, số thay
+đổi sau baseline.
+
+4. Nội dung nộp
+Mỗi nhóm nộp một thư mục gồm các thư mục con và nội dung dưới đây.
+Thư mục
+
+Nội dung cần nộp
+
+00_QuanLyNhom
+
+Nhật ký nhóm, bảng phân công, phiếu đánh giá chéo giữa các thành viên,
+danh sách công cụ đã dùng (kể cả công cụ AI) và dùng cho phần nào; danh
+sách nhóm khách hàng của nhóm và các nhóm mà nhóm làm khách hàng
+
+01_TamNhin
+
+Tài liệu tầm nhìn – phạm vi, lược đồ ngữ cảnh, hồ sơ bên liên quan và lớp
+người dùng, kế hoạch khai thác
+
+02_ThuThap
+
+Biên bản phỏng vấn có xác nhận, bảng hỏi và kết quả tổng hợp (hoặc biên
+bản hội thảo), phản hồi về prototype, ma trận CRUDL, danh sách yêu cầu đã
+phân loại và ưu tiên; biên bản làm việc với nhóm khách hàng
+
+03_MoHinh
+
+File gốc của các biểu đồ UML (mục 3.2) và ảnh xuất (PNG hoặc PDF)
+
+04_SRS
+
+SRS v1.0 (baseline) và SRS v1.1 (sau Change Request), dạng PDF
+
+05_QuanLyYeuCau
+
+Ma trận truy vết (RTM), hồ sơ Change Request (phiếu, phân tích tác động,
+quyết định CCB), biên bản rà soát SRS của nhóm bạn, phản hồi rà soát nhận
+được, báo cáo chỉ số yêu cầu
+
+Quy tắc đặt tên
+•
+•
+
+•
+•
+
+Thư mục gốc: CT241_Nhom<số nhóm>_DeTai<số đề tài>, ví dụ CT241_Nhom05_DeTai06.
+File: CT241_Nhom<số nhóm>_<TênTàiLiệu>_v<phiên bản>.<đuôi>, ví dụ
+CT241_Nhom05_SRS_v1.1.pdf, CT241_Nhom05_RTM_v1.0.xlsx,
+CT241_Nhom05_BienBanPhongVan01_v1.0.pdf.
+Tên thư mục và file viết tiếng Việt không dấu, không khoảng trắng; dùng dấu gạch dưới để ngăn
+cách.
+Tài liệu chính nộp dạng PDF; biểu đồ và bảng tính nộp kèm file gốc của công cụ.
+
+Cách nộp: nén thư mục gốc và nộp theo link:
+https://elearning.ctu.edu.vn/mod/assign/view.php?id=165559
+
+5. Đánh giá
+Điểm học phần chấm theo thang điểm 10, gồm: Báo cáo (đồ án) tối đa 4 điểm, Chuyên cần tối đa 1 điểm
+và Thi lý thuyết cuối kỳ tối đa 5 điểm, tương ứng tỷ trọng 40% – 10% – 50% trong đề cương CT241 (mục
+10.1). Đồ án được chấm theo Rubric đánh giá học phần CT241.
+Điều kiện được đánh giá (theo đề cương)
+
+•
+•
+•
+
+Tham dự 100% số tiết thực hành.
+Tham gia thu thập và phân tích yêu cầu phần mềm theo nhóm.
+Nộp tài liệu đặc tả yêu cầu phần mềm (SRS) — bắt buộc.
+
+5.1. Tiêu chí và điểm tối đa
+Tiêu chí
+
+CLO
+
+Điểm tối
+đa (/4)
+
+Bằng chứng giảng viên xem xét
+
+Thu thập yêu cầu
+
+CLO2 (30%),
+CLO3 (70%)
+
+1
+
+Mục 3.1: tầm nhìn – phạm vi, bên liên quan và lớp
+người dùng, kế hoạch khai thác, biên bản phỏng
+vấn, kỹ thuật thứ hai, ma trận CRUDL, phân loại –
+ưu tiên MoSCoW – xung đột
+
+Mô hình hoá yêu
+cầu
+
+CLO2 (30%),
+CLO3 (70%)
+
+1,5
+
+Mục 3.2: 5 loại biểu đồ UML, đặc tả use case, tính
+nhất quán giữa các biểu đồ
+
+Tài liệu đặc tả yêu
+cầu (SRS)
+
+CLO2 (30%),
+CLO3 (70%)
+
+1
+
+Mục 3.3 (ý 1–2): cấu trúc IEEE, FR, NFR đo được,
+cách viết yêu cầu
+
+Quản lý và kiểm
+chứng yêu cầu
+
+CLO2 (30%),
+CLO3 (70%)
+
+0,3
+
+Mục 3.3 (ý 3–6): rà soát chéo, RTM, quy trình
+Change Request và baseline, độ đầy đủ của phân
+tích tác động, chỉ số yêu cầu
+
+Tự chủ và tinh
+thần trách nhiệm
+
+CLO5
+
+0,1
+
+Hoàn thành phần việc đúng hạn theo nhật ký nhóm
+và bảng phân công, tính trung thực của báo cáo
+
+Làm việc nhóm
+
+CLO4
+
+0,1
+
+Phân công, phiếu đánh giá chéo giữa các thành
+viên, lịch sử phiên bản
+
+Tổng
+
+4
+
+5.2. Mức đánh giá
+Mỗi tiêu chí được xếp vào một trong 5 mức của rubric học phần:
+Tiêu chí
+
+Chưa đạt (0–3,9)
+
+Trung bình / TB
+Khá (4,0–6,9)
+
+Khá (7,0–7,9)
+
+Tốt (8,0–8,9)
+
+Xuất sắc (9,0–10)
+
+Thu thập yêu
+cầu
+
+Không xác định
+được nguồn yêu
+cầu hoặc yêu cầu
+thu thập sai lệch,
+thiếu nghiêm
+trọng.
+
+Xác định được một
+số nguồn yêu cầu
+nhưng còn thiếu
+nhiều thông tin; áp
+dụng kỹ thuật thu
+thập còn lúng
+túng.
+
+Thu thập được
+phần lớn yêu cầu
+chức năng và phi
+chức năng; áp
+dụng đúng các kỹ
+thuật cơ bản
+nhưng còn bỏ sót
+một số yêu cầu.
+
+Thu thập đầy đủ
+yêu cầu, lựa chọn
+kỹ thuật phù hợp,
+phân tích được
+mối quan hệ giữa
+các yêu cầu và các
+bên liên quan.
+
+Kết hợp hiệu quả
+nhiều kỹ thuật
+(phỏng vấn, khảo
+sát, workshop,
+prototype...), phát
+hiện yêu cầu tiềm
+ẩn, xử lý tốt các
+xung đột và ưu
+tiên yêu cầu.
+
+Mô hình hoá
+yêu cầu
+
+Các sơ đồ sai cú
+pháp hoặc không
+phản ánh nghiệp
+
+Xây dựng được
+một số sơ đồ
+nhưng còn thiếu
+
+Các sơ đồ đúng cơ
+bản nhưng chưa
+
+Các mô hình đầy
+đủ, đúng chuẩn
+UML, phản ánh rõ
+
+Mô hình hoá
+chuyên nghiệp,
+đầy đủ các góc
+
+Tiêu chí
+
+Chưa đạt (0–3,9)
+
+Trung bình / TB
+Khá (4,0–6,9)
+
+Khá (7,0–7,9)
+
+Tốt (8,0–8,9)
+
+Xuất sắc (9,0–10)
+
+vụ.
+
+thành phần hoặc
+sai quan hệ.
+
+đồng bộ.
+
+nghiệp vụ và có
+tính nhất quán
+cao.
+
+nhìn, logic chặt
+chẽ, hỗ trợ tốt cho
+thiết kế và phát
+triển hệ thống.
+
+Tài liệu đặc tả
+yêu cầu (SRS)
+
+Tài liệu thiếu nhiều
+nội dung quan
+trọng, trình bày
+không theo cấu
+trúc chuẩn.
+
+Có cấu trúc SRS
+nhưng mô tả còn
+mơ hồ, thiếu nhất
+quán và khó kiểm
+chứng.
+
+Tài liệu đầy đủ các
+nội dung chính,
+yêu cầu được mô
+tả tương đối rõ
+ràng.
+
+Tài liệu trình bày
+chuyên nghiệp,
+đầy đủ theo chuẩn
+IEEE, các yêu cầu
+rõ ràng, nhất quán
+và có thể kiểm
+chứng.
+
+Tài liệu xuất sắc,
+đầy đủ nội dung;
+đảm bảo tính đúng
+đắn, đầy đủ, khả
+thi và truy vết.
+
+Quản lý và
+kiểm chứng
+yêu cầu
+
+Không sử dụng
+được công cụ hoặc
+không thực hiện
+kiểm chứng yêu
+cầu.
+
+Sử dụng được
+công cụ ở mức cơ
+bản nhưng chưa
+quản lý được thay
+đổi hoặc truy vết
+yêu cầu.
+
+Thực hiện được
+quản lý phiên bản
+và truy vết yêu cầu
+cơ bản; kiểm
+chứng được phần
+lớn yêu cầu.
+
+Quản lý tốt thay
+đổi yêu cầu, sử
+dụng hiệu quả
+công cụ hỗ trợ,
+kiểm chứng theo
+checklist và tiêu
+chuẩn chấp nhận.
+
+Thiết lập quy trình
+quản lý yêu cầu
+hoàn chỉnh; truy
+vết đầy đủ, đánh
+giá tác động thay
+đổi, kiểm chứng
+toàn diện và đề
+xuất giải pháp tối
+ưu.
+
+Tự chủ và tinh
+thần trách
+nhiệm
+
+Không hoàn thành
+nhiệm vụ, thiếu
+chủ động, thiếu
+tinh thần trách
+nhiệm, báo cáo
+không trung thực.
+
+Hoàn thành một
+phần nhiệm vụ,
+còn phụ thuộc
+nhiều vào hướng
+dẫn, trách nhiệm
+chưa ổn định.
+
+Hoàn thành đầy đủ
+nhiệm vụ đúng
+thời hạn, có ý thức
+tự học và tinh thần
+trách nhiệm.
+
+Chủ động thực
+hiện công việc,
+hoàn thành tốt
+nhiệm vụ.
+
+Luôn chủ động,
+hoàn thành xuất
+sắc nhiệm vụ, có
+tinh thần trách
+nhiệm cao.
+
+Làm việc
+nhóm
+
+Không hoàn thành
+nhiệm vụ, thiếu
+hợp tác với nhóm.
+
+Tham gia ở mức
+tối thiểu; hoàn
+thành công việc
+khi có yêu cầu
+nhưng còn bị
+động.
+
+Hoàn thành đầy đủ
+nhiệm vụ được
+giao, phối hợp tốt
+với các thành viên
+và có ý thức trách
+nhiệm.
+
+Chủ động đề xuất
+ý tưởng, hỗ trợ các
+thành viên khác,
+làm việc nhóm
+hiệu quả và đúng
+tiến độ.
+
+Dẫn dắt nhóm, giải
+quyết hiệu quả các
+vấn đề và thúc đẩy
+nhóm đạt mục
+tiêu.
+
+5.3. Cách tính điểm
+Mỗi mức được quy về một điểm thang 10, rồi nhân với điểm tối đa của tiêu chí: Điểm tiêu chí = Điểm
+quy đổi × Điểm tối đa ÷ 10.
+Mức
+
+Chưa đạt
+
+Trung bình
+
+Khá
+
+Tốt
+
+Xuất sắc
+
+Điểm quy đổi
+
+3,9
+
+6,9
+
+7,9
+
+8,9
+
+10
+
+Ví dụ: tiêu chí Mô hình hoá yêu cầu đạt mức Tốt → 8,9 × 1,5 ÷ 10 = 1,335 điểm. Điểm đồ án là tổng 6
+tiêu chí, tối đa 4 điểm.
+
+Điểm được chấm cho từng sinh viên, chỉ dựa trên hồ sơ nộp, không có buổi bảo vệ hay vấn đáp. Bốn tiêu
+chí chuyên môn chấm theo sản phẩm của nhóm; hai tiêu chí Tự chủ và Làm việc nhóm chấm riêng cho
+từng người dựa trên nhật ký nhóm, bảng phân công, phiếu đánh giá chéo và lịch sử phiên bản.
+Nhóm không làm khách hàng cho nhóm nào: trừ 0,5 điểm vào điểm đồ án (thang 4) của mỗi thành viên
+(Mục 6).
+
+6. Nhóm đóng vai khách hàng
+Mỗi nhóm không tự đóng vai khách hàng cho dự án của mình mà phải nhờ một nhóm dự án khác đóng
+vai khách hàng, tức là đại diện cho bên đặt hàng và các bên liên quan của đề tài.
+Ví dụ: Nhóm 1 làm Đề tài 12 (Quản lý ký túc xá), Nhóm 2 làm Đề tài 6 (Đặt in, photocopy). Nhóm 2 có thể
+đóng vai khách hàng của Nhóm 1 (Ban quản lý Ký túc xá và các bên liên quan); Nhóm 1 có thể đóng vai
+khách hàng của Nhóm 2 (tiệm photocopy và các bên liên quan). Việc đổi chéo không bắt buộc: Nhóm 1
+cũng có thể nhờ một nhóm khác làm khách hàng cho mình.
+Quy định
+•
+•
+•
+•
+
+•
+
+Mỗi nhóm có ít nhất 1 nhóm khách hàng cho dự án của mình.
+Bắt buộc: mỗi nhóm phải làm khách hàng cho ít nhất 1 nhóm khác. Một nhóm có thể làm khách
+hàng cho 1 hoặc nhiều nhóm.
+Không bắt buộc đổi chéo: nhóm A làm khách hàng cho nhóm B thì nhóm B không nhất thiết phải
+làm khách hàng cho nhóm A.
+Riêng Đề tài 1 (Hệ thống đăng ký và quản lý sử dụng phòng máy của Khoa): nếu nhóm thu thập
+yêu cầu trực tiếp từ cán bộ Khoa, giảng viên thì không cần nhờ nhóm khác đóng vai khách hàng;
+khi đó các bên liên quan thật này giữ vai khách hàng. Nhóm làm Đề tài 1 vẫn phải làm khách
+hàng cho ít nhất 1 nhóm khác.
+Các nhóm tự thoả thuận với nhau và ghi danh sách vào hồ sơ nộp (thư mục 00_QuanLyNhom).
+
+Nhiệm vụ của nhóm khách hàng
+•
+•
+•
+•
+
+Đọc kỹ mô tả đề tài ở Mục 2 và đóng vai nhất quán các bên liên quan không phải sinh viên (bên
+đặt hàng, cán bộ quản lý, chủ cửa hàng…).
+Tham gia các buổi khai thác yêu cầu (phỏng vấn, hội thảo) do nhóm dự án tổ chức và xác nhận
+biên bản.
+Sau khi nhóm dự án baseline SRS v1.0, đưa ra ít nhất 1 Change Request theo yêu cầu ở Mục 3.3.
+Xem SRS và xác nhận yêu cầu (validation): đồng ý hoặc phản hồi những điểm chưa đúng với nhu
+cầu của khách hàng.
+
+Trừ điểm: nhóm không làm khách hàng cho nhóm nào sẽ bị trừ 0,5 điểm vào điểm đồ án (thang 4) của
+mỗi thành viên.
+
+7. Quy định
+Làm nhóm
+•
+
+Nhóm 2–3 sinh viên. Phân các vai: Trưởng nhóm, Requirement Analyst chính, Người ghi biên
+bản, Người quản lý RTM; một người có thể giữ nhiều vai.
+
+•
+•
+•
+
+Mỗi thành viên trực tiếp tham gia ít nhất 1 buổi phỏng vấn và vẽ ít nhất 2 biểu đồ.
+Nhật ký nhóm ghi hàng tuần: ai làm gì, mất bao lâu, vướng mắc gì.
+Thành viên không tham gia: nhóm báo giảng viên ngay và ghi rõ trong nhật ký nhóm.
+
+Liêm chính học thuật
+•
+
+•
+•
+
+Biên bản phỏng vấn và kết quả khảo sát phải từ người dùng thật. Biên bản bịa đặt hoặc sao chép
+giữa các nhóm: tiêu chí Thu thập yêu cầu và tiêu chí Tự chủ bị xếp mức Chưa đạt (báo cáo không
+trung thực).
+Tài liệu, mẫu tham khảo từ bên ngoài phải ghi nguồn.
+Khi phỏng vấn, xin phép trước nếu ghi âm; không công khai thông tin cá nhân của người được
+phỏng vấn.
+
+Công cụ
+•
+
+•
+
+Nhóm được tự chọn mọi công cụ cho tất cả phần việc: khảo sát, prototype, vẽ UML, viết SRS,
+quản lý yêu cầu và truy vết, quản lý phiên bản (ví dụ Google Forms, Figma, StarUML, draw.io,
+Excel, Google Sheets, Jira, Azure DevOps, Trello, GitHub). Không bắt buộc công cụ cụ thể nào.
+Phụ lục báo cáo liệt kê các công cụ đã dùng, kể cả công cụ AI, và dùng cho phần nào.
+
+Sử dụng công cụ AI
+•
+•
+
+Được dùng AI cho bất kỳ phần việc nào.
+Nội dung biên bản phỏng vấn, câu trả lời khảo sát và yêu cầu phải xuất phát từ người dùng thật;
+không dùng AI để tạo ra các nội dung này.
+
+Lưu ý: không nộp SRS (bắt buộc theo đề cương) thì không được đánh giá đồ án.
+Tài liệu tham khảo: giáo trình Phân tích yêu cầu phần mềm (Chương 1–4) và slide bài giảng CT241;
+
+
