@@ -1,11 +1,14 @@
 <mxfile host="65bd71144e">
     <diagram name="UC_LostLink_TongQuat" id="diagram_lostlink">
-        <mxGraphModel dx="1674" dy="957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="693" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="bound" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;rounded=1;arcSize=10;fillColor=#FFFFFF;strokeColor=#455A64;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" value="Hệ thống Quản lý và Tìm kiếm Đồ thất lạc tập trung" vertex="1">
-                    <mxGeometry height="880" width="860" x="340" y="40" as="geometry">
+                <mxCell id="AtfnMTetR9KcQOqat7hY-1" connectable="0" parent="1" style="group;fillColor=default;" value="" vertex="1">
+                    <mxGeometry height="940" width="1185" x="130" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="bound" parent="AtfnMTetR9KcQOqat7hY-1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;rounded=1;arcSize=10;fillColor=#FFFFFF;strokeColor=#455A64;strokeWidth=2;fontSize=14;fontStyle=1;align=center;" value="Hệ thống Quản lý và Tìm kiếm Đồ thất lạc tập trung" vertex="1">
+                    <mxGeometry height="880" width="860" x="210" as="geometry">
                         <mxRectangle height="30" width="380" x="340" y="40" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
@@ -79,115 +82,115 @@
                 <mxCell id="uc_14" parent="bound" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#8D6E63;strokeWidth=1.2;fontSize=11;align=center;" value="UC-14&lt;br&gt;Kiểm duyệt tin đăng&lt;br&gt;&amp;amp; xử lý vi phạm" vertex="1">
                     <mxGeometry height="55" width="175" x="670" y="500" as="geometry"/>
                 </mxCell>
-                <mxCell id="act_SVMat" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="Sinh viên&lt;br&gt;thất lạc đồ" vertex="1">
-                    <mxGeometry height="70" width="35" x="250" y="190" as="geometry"/>
+                <mxCell id="act_SVMat" parent="AtfnMTetR9KcQOqat7hY-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="Sinh viên&lt;br&gt;thất lạc đồ" vertex="1">
+                    <mxGeometry height="70" width="35" x="120" y="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="act_SVNhat" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="Sinh viên&lt;br&gt;nhặt được đồ" vertex="1">
-                    <mxGeometry height="70" width="35" x="285" y="550" as="geometry"/>
+                <mxCell id="act_SVNhat" parent="AtfnMTetR9KcQOqat7hY-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="Sinh viên&lt;br&gt;nhặt được đồ" vertex="1">
+                    <mxGeometry height="70" width="35" x="155" y="510" as="geometry"/>
                 </mxCell>
-                <mxCell id="act_SysNoti" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="«system»&lt;br&gt;Dịch vụ thông báo&lt;br&gt;(Email / App)" vertex="1">
-                    <mxGeometry height="70" width="35" x="250" y="780" as="geometry"/>
+                <mxCell id="act_SysNoti" parent="AtfnMTetR9KcQOqat7hY-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="«system»&lt;br&gt;Dịch vụ thông báo&lt;br&gt;(Email / App)" vertex="1">
+                    <mxGeometry height="70" width="35" x="120" y="740" as="geometry"/>
                 </mxCell>
-                <mxCell id="act_Admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="Cán bộ CTSV" vertex="1">
-                    <mxGeometry height="70" width="35" x="1240" y="240" as="geometry"/>
+                <mxCell id="act_Admin" parent="AtfnMTetR9KcQOqat7hY-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="Cán bộ CTSV" vertex="1">
+                    <mxGeometry height="70" width="35" x="1110" y="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="act_SVTram" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="Quản lý trạm" vertex="1">
-                    <mxGeometry height="70" width="35" x="1280" y="715" as="geometry"/>
+                <mxCell id="act_SVTram" parent="AtfnMTetR9KcQOqat7hY-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="Quản lý trạm" vertex="1">
+                    <mxGeometry height="70" width="35" x="1130" y="675" as="geometry"/>
                 </mxCell>
-                <mxCell id="act_SysAuth" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="«system»&lt;br&gt;SSO CTU" vertex="1">
-                    <mxGeometry height="70" width="35" x="1230" y="85" as="geometry"/>
+                <mxCell id="act_SysAuth" parent="AtfnMTetR9KcQOqat7hY-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="«system»&lt;br&gt;SSO CTU" vertex="1">
+                    <mxGeometry height="70" width="35" x="1100" y="45" as="geometry"/>
                 </mxCell>
-                <mxCell id="ga1" edge="1" parent="1" source="act_SVMat" style="endArrow=block;endSize=12;endFill=0;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="act_SV">
+                <mxCell id="ga1" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVMat" style="endArrow=block;endSize=12;endFill=0;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="act_SV">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ga2" edge="1" parent="1" source="act_SVNhat" style="endArrow=block;endSize=12;endFill=0;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="act_SV">
+                <mxCell id="ga2" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVNhat" style="endArrow=block;endSize=12;endFill=0;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="act_SV">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="ga3" edge="1" parent="1" source="act_SVTram" style="endArrow=block;endSize=12;endFill=0;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="act_SV">
+                <mxCell id="ga3" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVTram" style="endArrow=block;endSize=12;endFill=0;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="act_SV">
                     <mxGeometry relative="1" x="0.0205" as="geometry">
                         <Array as="points">
-                            <mxPoint x="1240" y="980"/>
-                            <mxPoint x="230" y="980"/>
-                            <mxPoint x="130" y="470"/>
+                            <mxPoint x="1110" y="940"/>
+                            <mxPoint x="100" y="940"/>
+                            <mxPoint y="430"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="ea1" edge="1" parent="1" source="act_SV" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="uc_01">
+                <mxCell id="ea1" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SV" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="uc_01">
                     <mxGeometry relative="1" x="-0.0854" as="geometry">
                         <Array as="points">
-                            <mxPoint x="177.5" y="120"/>
+                            <mxPoint x="47.5" y="80"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="ea2" edge="1" parent="1" source="act_SV" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_04">
+                <mxCell id="ea2" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SV" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_04">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea3" edge="1" parent="1" source="act_SV" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_06">
+                <mxCell id="ea3" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SV" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_06">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea4" edge="1" parent="1" source="act_SVMat" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_02">
+                <mxCell id="ea4" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVMat" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_02">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea5" edge="1" parent="1" source="act_SV" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_07">
+                <mxCell id="ea5" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SV" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_07">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea6" edge="1" parent="1" source="act_SVMat" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_09">
+                <mxCell id="ea6" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVMat" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_09">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea7" edge="1" parent="1" source="act_SVNhat" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_03">
+                <mxCell id="ea7" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVNhat" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_03">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea8" edge="1" parent="1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_01">
+                <mxCell id="ea8" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_01">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea9" edge="1" parent="1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_14">
+                <mxCell id="ea9" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_14">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea10" edge="1" parent="1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_15">
+                <mxCell id="ea10" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_15">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea11" edge="1" parent="1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_16">
+                <mxCell id="ea11" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_16">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea12" edge="1" parent="1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_10">
+                <mxCell id="ea12" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_10">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea13" edge="1" parent="1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_11">
+                <mxCell id="ea13" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_11">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea14" edge="1" parent="1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_12">
+                <mxCell id="ea14" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_12">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea15" edge="1" parent="1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_13">
+                <mxCell id="ea15" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="uc_13">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea16" edge="1" parent="1" source="uc_01" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="act_SysAuth">
+                <mxCell id="ea16" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="uc_01" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="act_SysAuth">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea17" edge="1" parent="1" source="uc_18" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="act_SysNoti">
+                <mxCell id="ea17" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="uc_18" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.2;" target="act_SysNoti">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="inc_03" edge="1" parent="1" source="uc_11" style="endArrow=open;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#1565C0;fontColor=#1565C0;fontSize=10;" target="uc_18" value="«include»">
+                <mxCell id="inc_03" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="uc_11" style="endArrow=open;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#1565C0;fontColor=#1565C0;fontSize=10;" target="uc_18" value="«include»">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="act_SV" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="Sinh viên" vertex="1">
-                    <mxGeometry height="70" width="35" x="160" y="370" as="geometry"/>
+                <mxCell id="act_SV" parent="AtfnMTetR9KcQOqat7hY-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=11;align=center;" value="Sinh viên" vertex="1">
+                    <mxGeometry height="70" width="35" x="30" y="330" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea_admin_08" edge="1" parent="1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;" target="uc_08">
+                <mxCell id="ea_admin_08" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;" target="uc_08">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea_admin_16" edge="1" parent="1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;" target="uc_16">
+                <mxCell id="ea_admin_16" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;" target="uc_16">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea_admin_17" edge="1" parent="1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;" target="uc_17">
+                <mxCell id="ea_admin_17" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_Admin" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;" target="uc_17">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea_tram_14" edge="1" parent="1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;" target="uc_14">
+                <mxCell id="ea_tram_14" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;" target="uc_14">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="ea_tram_09" edge="1" parent="1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;" target="uc_09">
+                <mxCell id="ea_tram_09" edge="1" parent="AtfnMTetR9KcQOqat7hY-1" source="act_SVTram" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;" target="uc_09">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>

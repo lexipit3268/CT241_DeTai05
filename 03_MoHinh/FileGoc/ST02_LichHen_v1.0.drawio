@@ -1,126 +1,129 @@
 ﻿<mxfile host="65bd71144e">
     <diagram name="ST02_LichHen" id="st02">
-        <mxGraphModel dx="926" dy="724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="700" math="0" shadow="0">
+        <mxGraphModel dx="1254" dy="981" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="700" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1;fontFamily=Segoe UI;fontColor=#000000;" value="ST-02. Trạng thái của lịch hẹn nhận đồ" vertex="1">
-                    <mxGeometry height="30" width="700" x="150" y="25" as="geometry"/>
+                <mxCell id="a2IoGf7CqBt_CCAhJPot-2" connectable="0" parent="1" style="group;fillColor=default;" value="" vertex="1">
+                    <mxGeometry height="581" width="860" x="60" y="25" as="geometry"/>
                 </mxCell>
-                <mxCell id="start" parent="1" style="ellipse;fillColor=#000000;strokeColor=none;" value="" vertex="1">
-                    <mxGeometry height="22" width="22" x="120" y="80" as="geometry"/>
+                <mxCell id="title" parent="a2IoGf7CqBt_CCAhJPot-2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1;fontFamily=Segoe UI;fontColor=#000000;" value="ST-02. Trạng thái của lịch hẹn nhận đồ" vertex="1">
+                    <mxGeometry height="30" width="700" x="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="state_ChoXacNhan" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#EDE7F6;strokeColor=#673AB7;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Chờ xác nhận" vertex="1">
-                    <mxGeometry height="42" width="140" x="60" y="160" as="geometry"/>
+                <mxCell id="start" parent="a2IoGf7CqBt_CCAhJPot-2" style="ellipse;fillColor=#000000;strokeColor=none;" value="" vertex="1">
+                    <mxGeometry height="22" width="22" x="60" y="55" as="geometry"/>
                 </mxCell>
-                <mxCell id="state_DaXacNhan" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#EDE7F6;strokeColor=#673AB7;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Đã xác nhận" vertex="1">
-                    <mxGeometry height="42" width="150" x="420" y="160" as="geometry"/>
+                <mxCell id="state_ChoXacNhan" parent="a2IoGf7CqBt_CCAhJPot-2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#EDE7F6;strokeColor=#673AB7;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Chờ xác nhận" vertex="1">
+                    <mxGeometry height="42" width="140" y="135" as="geometry"/>
                 </mxCell>
-                <mxCell id="state_DaDenNhan" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#EDE7F6;strokeColor=#673AB7;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Đã đến nhận" vertex="1">
-                    <mxGeometry height="42" width="140" x="780" y="160" as="geometry"/>
+                <mxCell id="state_DaXacNhan" parent="a2IoGf7CqBt_CCAhJPot-2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#EDE7F6;strokeColor=#673AB7;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Đã xác nhận" vertex="1">
+                    <mxGeometry height="42" width="150" x="360" y="135" as="geometry"/>
                 </mxCell>
-                <mxCell id="state_PhongToa" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#FFF3E0;strokeColor=#E65100;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Phong tỏa" vertex="1">
-                    <mxGeometry height="42" width="140" x="425" y="300" as="geometry"/>
+                <mxCell id="state_DaDenNhan" parent="a2IoGf7CqBt_CCAhJPot-2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#EDE7F6;strokeColor=#673AB7;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Đã đến nhận" vertex="1">
+                    <mxGeometry height="42" width="140" x="720" y="135" as="geometry"/>
                 </mxCell>
-                <mxCell id="state_DaHuy" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#EDE7F6;strokeColor=#673AB7;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Đã hủy" vertex="1">
-                    <mxGeometry height="42" width="130" x="200" y="440" as="geometry"/>
+                <mxCell id="state_PhongToa" parent="a2IoGf7CqBt_CCAhJPot-2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#FFF3E0;strokeColor=#E65100;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Phong tỏa" vertex="1">
+                    <mxGeometry height="42" width="140" x="365" y="275" as="geometry"/>
                 </mxCell>
-                <mxCell id="state_QuaHan" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#EDE7F6;strokeColor=#673AB7;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Quá hạn" vertex="1">
-                    <mxGeometry height="42" width="130" x="660" y="440" as="geometry"/>
+                <mxCell id="state_DaHuy" parent="a2IoGf7CqBt_CCAhJPot-2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#EDE7F6;strokeColor=#673AB7;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Đã hủy" vertex="1">
+                    <mxGeometry height="42" width="130" x="140" y="415" as="geometry"/>
                 </mxCell>
-                <mxCell id="end" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;strokeWidth=1.5;" value="" vertex="1">
-                    <mxGeometry height="26" width="26" x="480" y="580" as="geometry"/>
+                <mxCell id="state_QuaHan" parent="a2IoGf7CqBt_CCAhJPot-2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#EDE7F6;strokeColor=#673AB7;strokeWidth=1.2;fontFamily=Segoe UI;fontSize=12;fontColor=#000000;align=center;" value="Quá hạn" vertex="1">
+                    <mxGeometry height="42" width="130" x="600" y="415" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_start" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_ChoXacNhan" value="gửi yêu cầu hẹn">
+                <mxCell id="end" parent="a2IoGf7CqBt_CCAhJPot-2" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="26" width="26" x="420" y="555" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_start" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_ChoXacNhan" value="gửi yêu cầu hẹn">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_xacminh_ok" edge="1" parent="1" source="state_ChoXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaXacNhan" value="xác minh hợp lệ">
+                <mxCell id="e_xacminh_ok" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_ChoXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaXacNhan" value="xác minh hợp lệ">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint y="-10" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="e_xacminh_fail" edge="1" parent="1" source="state_ChoXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaHuy" value="xác minh không khớp">
+                <mxCell id="e_xacminh_fail" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_ChoXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaHuy" value="xác minh không khớp">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-20" as="offset"/>
                         <Array as="points">
-                            <mxPoint x="130" y="461"/>
+                            <mxPoint x="70" y="436"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="e_dennhan" edge="1" parent="1" source="state_DaXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaDenNhan" value="đến trạm nhận đồ&#xa;[đối chiếu thẻ SV đúng]">
+                <mxCell id="e_dennhan" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_DaXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaDenNhan" value="đến trạm nhận đồ&#xa;[đối chiếu thẻ SV đúng]">
                     <mxGeometry relative="1" x="-0.0476" y="21" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="e_doihen" edge="1" parent="1" source="state_DaXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaXacNhan" value="đổi lịch hẹn&#xa;[trước giờ hẹn ∧ còn chỗ]">
+                <mxCell id="e_doihen" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_DaXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaXacNhan" value="đổi lịch hẹn&#xa;[trước giờ hẹn ∧ còn chỗ]">
                     <mxGeometry relative="1" y="-15" as="geometry">
                         <mxPoint as="offset"/>
                         <Array as="points">
-                            <mxPoint x="530" y="115"/>
-                            <mxPoint x="460" y="115"/>
+                            <mxPoint x="470" y="90"/>
+                            <mxPoint x="400" y="90"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="e_sv_huy" edge="1" parent="1" source="state_DaXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaHuy" value="sinh viên hủy hẹn&#xa;[trước giờ hẹn]">
+                <mxCell id="e_sv_huy" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_DaXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaHuy" value="sinh viên hủy hẹn&#xa;[trước giờ hẹn]">
                     <mxGeometry relative="1" x="-0.0294" y="-20" as="geometry">
                         <mxPoint as="offset"/>
                         <Array as="points">
-                            <mxPoint x="450" y="240"/>
-                            <mxPoint x="280" y="240"/>
+                            <mxPoint x="390" y="215"/>
+                            <mxPoint x="220" y="215"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="e_quahan" edge="1" parent="1" source="state_DaXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_QuaHan" value="quá hạn hẹn&#xa;[hết khung giờ ∧ quá 48h]">
+                <mxCell id="e_quahan" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_DaXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_QuaHan" value="quá hạn hẹn&#xa;[hết khung giờ ∧ quá 48h]">
                     <mxGeometry relative="1" x="-0.1111" y="20" as="geometry">
                         <mxPoint as="offset"/>
                         <Array as="points">
-                            <mxPoint x="540" y="240"/>
-                            <mxPoint x="725" y="240"/>
+                            <mxPoint x="480" y="215"/>
+                            <mxPoint x="665" y="215"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="e_tranhchap" edge="1" parent="1" source="state_DaXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_PhongToa" value="phát sinh tranh chấp&#xa;[≥ 2 người nhận đúng]">
+                <mxCell id="e_tranhchap" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_DaXacNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_PhongToa" value="phát sinh tranh chấp&#xa;[≥ 2 người nhận đúng]">
                     <mxGeometry relative="1" x="0.3878" y="65" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="e_ctsv_ok" edge="1" parent="1" source="state_PhongToa" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaDenNhan" value="CTSV xác nhận chính chủ">
+                <mxCell id="e_ctsv_ok" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_PhongToa" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaDenNhan" value="CTSV xác nhận chính chủ">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="35" y="-10" as="offset"/>
                         <Array as="points">
-                            <mxPoint x="850" y="321"/>
+                            <mxPoint x="790" y="296"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="e_ctsv_fail" edge="1" parent="1" source="state_PhongToa" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaHuy" value="CTSV bác bỏ yêu cầu">
+                <mxCell id="e_ctsv_fail" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_PhongToa" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="state_DaHuy" value="CTSV bác bỏ yêu cầu">
                     <mxGeometry relative="1" x="-0.5299" y="9" as="geometry">
                         <mxPoint as="offset"/>
                         <Array as="points">
-                            <mxPoint x="310" y="321"/>
+                            <mxPoint x="250" y="296"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="e_end_dennhan" edge="1" parent="1" source="state_DaDenNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="end" value="trao trả xong">
+                <mxCell id="e_end_dennhan" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_DaDenNhan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="end" value="trao trả xong">
                     <mxGeometry relative="1" x="0.1123" y="-13" as="geometry">
                         <mxPoint as="offset"/>
                         <Array as="points">
-                            <mxPoint x="890" y="593"/>
+                            <mxPoint x="830" y="568"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="e_end_quahan" edge="1" parent="1" source="state_QuaHan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="end" value="mở khóa đồ vật">
+                <mxCell id="e_end_quahan" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_QuaHan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="end" value="mở khóa đồ vật">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="15" y="-10" as="offset"/>
                         <Array as="points">
-                            <mxPoint x="725" y="593"/>
+                            <mxPoint x="665" y="568"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="e_end_dahuy" edge="1" parent="1" source="state_DaHuy" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="end" value="giải phóng đồ vật">
+                <mxCell id="e_end_dahuy" edge="1" parent="a2IoGf7CqBt_CCAhJPot-2" source="state_DaHuy" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=10.5;fontFamily=Segoe UI;align=center;" target="end" value="giải phóng đồ vật">
                     <mxGeometry relative="1" x="0.0184" y="13" as="geometry">
                         <mxPoint as="offset"/>
                         <Array as="points">
-                            <mxPoint x="265" y="593"/>
+                            <mxPoint x="205" y="568"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
