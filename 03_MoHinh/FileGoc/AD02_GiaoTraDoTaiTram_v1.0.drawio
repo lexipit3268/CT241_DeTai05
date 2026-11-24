@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Antigravity">
   <diagram name="AD02_GiaoTraDoTaiTram" id="ad02">
-    <mxGraphModel dx="2188" dy="909" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1150" math="0" shadow="0">
+    <mxGraphModel dx="1058" dy="439" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1150" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -28,8 +28,8 @@
         <mxCell id="act_QuetQR" parent="lane_Tram" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#FB8C00;fontSize=11;align=center;" value="Quét mã QR trên món đồ&#xa;lưu kho tại trạm" vertex="1">
           <mxGeometry height="50" width="150" x="100" y="182" as="geometry" />
         </mxCell>
-        <mxCell id="act_DoiChieu" parent="lane_Tram" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#FB8C00;fontSize=11;align=center;" value="Đối chiếu thẻ SV &amp; mã hẹn&#xa;với người đến nhận thực tế" vertex="1">
-          <mxGeometry height="50" width="160" x="97" y="393" as="geometry" />
+        <mxCell id="act_DoiChieu" parent="lane_Tram" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#FB8C00;fontSize=11;align=center;" value="Đối chiếu thẻ SV/CCCD gốc &amp;amp; mã hẹn&lt;br&gt;với người đến nhận thực tế" vertex="1">
+          <mxGeometry height="50" width="197" x="76.5" y="393" as="geometry" />
         </mxCell>
         <mxCell id="dec_KhopThe" parent="lane_Tram" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#FBC02D;fontSize=11;align=center;" value="Thông tin&#xa;trùng khớp?" vertex="1">
           <mxGeometry height="60" width="120" x="115" y="471" as="geometry" />
